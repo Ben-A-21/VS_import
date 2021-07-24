@@ -1,0 +1,424 @@
+1.3368 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+202.0347 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x1352daf60>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x132a3d908>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+202.0347 	EXP 	window1: recordFrameIntervals = False
+202.1999 	EXP 	window1: recordFrameIntervals = True
+202.7684 	WARNING 	t of last frame was 19.99ms (=1/50)
+203.0169 	EXP 	window1: recordFrameIntervals = False
+203.2005 	EXP 	Created consent_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Slide1.jpg', interpolate=True, mask=None, maskParams=None, name='consent_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.8533, 0.8533]), texRes=128, units='height', win=Window(...))
+203.3585 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([ 0.  , -0.49]), rgb=array([0., 0., 0.]), text='After reading, press Space to continue\n\n', units='height', win=Window(...), wrapWidth=1)
+203.3952 	EXP 	Created consent = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Slide2.jpg', interpolate=True, mask=None, maskParams=None, name='consent', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.8533, 0.8533]), texRes=128, units='height', win=Window(...))
+203.4216 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0, pos=array([ 0.  , -0.49]), rgb=array([0., 0., 0.]), text='After reading, press Space to continue\n\n', units='height', win=Window(...), wrapWidth=1)
+203.4550 	EXP 	Created consent_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Slide3.jpg', interpolate=True, mask=None, maskParams=None, name='consent_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.8533, 0.8533]), texRes=128, units='height', win=Window(...))
+203.4880 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_5', opacity=1.0, ori=0, pos=array([ 0.  , -0.49]), rgb=array([0., 0., 0.]), text='I consent (Y) I do not consent (Esc)\n', units='height', win=Window(...), wrapWidth=1)
+203.5258 	EXP 	Created inst_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='inst_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+203.5508 	EXP 	Created fixation_target = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 0., 0.]), fillColorSpace='rgb', interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineWidth=1, name='fixation_target', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([20., 20.]), units='pix', vertices=ndarray(...), win=Window(...), windingRule=None)
+203.5630 	EXP 	Created corrAns_reminder_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='corrAns_reminder_text', opacity=1.0, ori=0, pos=array([0., 4.]), rgb=array([0., 0., 0.]), text='Present: m\n\nAbsent: v', units='height', win=Window(...), wrapWidth=1)
+203.5691 	EXP 	Created memory_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='red', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='memory_2', opacity=1.0, ori=0, pos=array([0.  , 0.44]), rgb=array([255.,   0.,   0.]), text='Memorise...\n\n', units='height', win=Window(...), wrapWidth=1)
+203.5714 	EXP 	Created memory = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='red', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='memory', opacity=1.0, ori=0, pos=array([0.  , 0.44]), rgb=array([255.,   0.,   0.]), text='Memorise...\n\n', units='height', win=Window(...), wrapWidth=1)
+203.5735 	EXP 	Created target = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='target', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='pix', win=Window(...))
+203.5752 	EXP 	Created dist1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='dist1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='pix', win=Window(...))
+203.5768 	EXP 	Created dist2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='dist2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='pix', win=Window(...))
+203.5786 	EXP 	Created dist3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='dist3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='pix', win=Window(...))
+203.5803 	EXP 	Created dist4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='dist4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='pix', win=Window(...))
+203.5820 	EXP 	Created dist5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='dist5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='pix', win=Window(...))
+203.5837 	EXP 	Created dist6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='dist6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='pix', win=Window(...))
+203.5853 	EXP 	Created dist7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='dist7', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='pix', win=Window(...))
+203.5870 	EXP 	Created dist8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='dist8', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='pix', win=Window(...))
+203.5884 	EXP 	Created fixation_target_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([0., 1., 0.]), fillColorSpace='rgb', interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineWidth=1, name='fixation_target_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='pix', vertices=ndarray(...), win=Window(...), windingRule=None)
+203.5917 	EXP 	Created corrAns_reminder_text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='corrAns_reminder_text_2', opacity=1.0, ori=0, pos=array([0., 4.]), rgb=array([0., 0., 0.]), text='Present: m\n\nAbsent: v', units='height', win=Window(...), wrapWidth=1)
+203.5964 	EXP 	Created search_txt_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='green', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='search_txt_2', opacity=1.0, ori=0, pos=array([0.  , 0.44]), rgb=array([  0., 128.,   0.]), text='Search...\n\n', units='height', win=Window(...), wrapWidth=1)
+203.5988 	EXP 	Created search_txt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='green', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='search_txt', opacity=1.0, ori=0, pos=array([0.  , 0.44]), rgb=array([  0., 128.,   0.]), text='Search...\n\n', units='height', win=Window(...), wrapWidth=1)
+203.6008 	EXP 	Created search_img = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=False, mask=None, maskParams=None, name='search_img', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.8533, 0.8533]), texRes=128, units='height', win=Window(...))
+203.6320 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text="Press 'Space Bar' to continue", units='height', win=Window(...), wrapWidth=1)
+203.6634 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+203.6814 	EXP 	consent_1: autoDraw = True
+203.6814 	EXP 	text_3: autoDraw = True
+204.5904 	DATA 	Keypress: space
+204.6022 	EXP 	consent_1: autoDraw = False
+204.6022 	EXP 	text_3: autoDraw = False
+204.6022 	EXP 	consent: autoDraw = True
+204.6022 	EXP 	text_4: autoDraw = True
+205.3543 	DATA 	Keypress: space
+205.3655 	EXP 	consent: autoDraw = False
+205.3655 	EXP 	text_4: autoDraw = False
+205.3655 	EXP 	consent_2: autoDraw = True
+205.3655 	EXP 	text_5: autoDraw = True
+206.2045 	DATA 	Keypress: space
+207.2219 	DATA 	Keypress: y
+207.2314 	EXP 	consent_2: autoDraw = False
+207.2314 	EXP 	text_5: autoDraw = False
+207.2314 	EXP 	inst_text: autoDraw = True
+209.6714 	DATA 	Keypress: m
+210.0990 	EXP 	Imported Psychopy_Exp_Params_pilot.xlsx as conditions, 4 conditions, 19 params
+210.0993 	EXP 	Created sequence: random, trialTypes=4, nReps=1, seed=None
+210.0997 	EXP 	New trial (rep=0, index=0): OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_018_cat_005'), ('FILE_SEARCH_IMAGE', 'S1_building_018_cat_005.jpg'), ('TARGET', 1), ('TARGET_NAME', 'cat1440.png'), ('TARGET_MEM', 'cat1440.png'), ('D1', 'cat1534.png'), ('D2', 'cat1396.png'), ('D3', 'cat1452.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')])
+210.1047 	DATA 	Keypress: space
+210.1145 	EXP 	inst_text: autoDraw = False
+210.1145 	EXP 	fixation_target: autoDraw = True
+210.1145 	EXP 	corrAns_reminder_text: autoDraw = True
+210.1145 	EXP 	memory_2: autoDraw = True
+210.6154 	EXP 	fixation_target: autoDraw = False
+210.6154 	EXP 	corrAns_reminder_text: autoDraw = False
+210.6154 	EXP 	memory_2: autoDraw = False
+210.6154 	EXP 	target: opacity = 1.0
+210.6154 	EXP 	target: pos = array([0., 0.])
+210.6154 	EXP 	target: size = array([58, 80])
+210.6154 	EXP 	target: image = 'cat1440.png'
+210.6154 	EXP 	dist1: opacity = 1.0
+210.6154 	EXP 	dist1: pos = array([-200.,  -50.])
+210.6154 	EXP 	dist1: size = array([47, 80])
+210.6154 	EXP 	dist1: image = 'cat1534.png'
+210.6154 	EXP 	dist2: opacity = 1.0
+210.6154 	EXP 	dist2: pos = array([-100.,  100.])
+210.6154 	EXP 	dist2: size = array([80, 40])
+210.6154 	EXP 	dist2: image = 'cat1396.png'
+210.6154 	EXP 	dist3: opacity = 1.0
+210.6154 	EXP 	dist3: pos = array([-400.,  250.])
+210.6154 	EXP 	dist3: size = array([41, 80])
+210.6154 	EXP 	dist3: image = 'cat1452.png'
+210.6154 	EXP 	dist4: opacity = 0.0
+210.6154 	EXP 	dist4: pos = array([200., 200.])
+210.6154 	EXP 	dist4: size = array([80, 80])
+210.6154 	EXP 	dist4: image = 'blank.png'
+210.6154 	EXP 	dist5: opacity = 0.0
+210.6154 	EXP 	dist5: pos = array([100.,  50.])
+210.6154 	EXP 	dist5: size = array([80, 80])
+210.6154 	EXP 	dist5: image = 'blank.png'
+210.6154 	EXP 	dist6: opacity = 0.0
+210.6154 	EXP 	dist6: pos = array([ 300., -200.])
+210.6154 	EXP 	dist6: size = array([80, 80])
+210.6154 	EXP 	dist6: image = 'blank.png'
+210.6154 	EXP 	dist7: opacity = 0.0
+210.6154 	EXP 	dist7: pos = array([-300., -100.])
+210.6154 	EXP 	dist7: size = array([80, 80])
+210.6154 	EXP 	dist7: image = 'blank.png'
+210.6154 	EXP 	dist8: opacity = 0.0
+210.6154 	EXP 	dist8: pos = array([ 400., -150.])
+210.6154 	EXP 	dist8: size = array([80, 80])
+210.6154 	EXP 	dist8: image = 'blank.png'
+210.6154 	EXP 	memory: autoDraw = True
+210.6154 	EXP 	target: autoDraw = True
+210.6154 	EXP 	dist1: autoDraw = True
+210.6154 	EXP 	dist2: autoDraw = True
+210.6154 	EXP 	dist3: autoDraw = True
+210.6154 	EXP 	dist4: autoDraw = True
+210.6154 	EXP 	dist5: autoDraw = True
+210.6154 	EXP 	dist6: autoDraw = True
+210.6154 	EXP 	dist7: autoDraw = True
+210.6154 	EXP 	dist8: autoDraw = True
+214.6185 	EXP 	memory: autoDraw = False
+214.6185 	EXP 	target: autoDraw = False
+214.6185 	EXP 	dist1: autoDraw = False
+214.6185 	EXP 	dist2: autoDraw = False
+214.6185 	EXP 	dist3: autoDraw = False
+214.6185 	EXP 	dist4: autoDraw = False
+214.6185 	EXP 	dist5: autoDraw = False
+214.6185 	EXP 	dist6: autoDraw = False
+214.6185 	EXP 	dist7: autoDraw = False
+214.6185 	EXP 	dist8: autoDraw = False
+214.6185 	EXP 	memory: autoDraw = False
+214.6185 	EXP 	target: autoDraw = False
+214.6185 	EXP 	dist1: autoDraw = False
+214.6185 	EXP 	dist2: autoDraw = False
+214.6185 	EXP 	dist3: autoDraw = False
+214.6185 	EXP 	dist4: autoDraw = False
+214.6185 	EXP 	dist5: autoDraw = False
+214.6185 	EXP 	dist6: autoDraw = False
+214.6185 	EXP 	dist7: autoDraw = False
+214.6185 	EXP 	dist8: autoDraw = False
+214.6185 	EXP 	fixation_target_2: autoDraw = True
+214.6185 	EXP 	corrAns_reminder_text_2: autoDraw = True
+214.6185 	EXP 	search_txt_2: autoDraw = True
+215.0549 	DATA 	Keypress: m
+215.2165 	EXP 	fixation_target_2: autoDraw = False
+215.2165 	EXP 	corrAns_reminder_text_2: autoDraw = False
+215.2165 	EXP 	search_txt_2: autoDraw = False
+215.2165 	EXP 	search_img: opacity = 1.0
+215.2165 	EXP 	search_img: image = 'S1_building_018_cat_005.jpg'
+215.2165 	EXP 	search_txt: autoDraw = True
+215.2165 	EXP 	search_img: autoDraw = True
+215.6895 	EXP 	New trial (rep=0, index=1): OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_028_person_014'), ('FILE_SEARCH_IMAGE', 'S1_building_028_person_014.jpg'), ('TARGET', 1), ('TARGET_NAME', 'person1293.png'), ('TARGET_MEM', 'person1293.png'), ('D1', 'person1501.png'), ('D2', 'person1447.png'), ('D3', 'person1485.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')])
+215.6937 	DATA 	Keypress: m
+215.7167 	EXP 	search_txt: autoDraw = False
+215.7167 	EXP 	search_img: autoDraw = False
+215.7167 	EXP 	text_2: autoDraw = True
+215.7167 	EXP 	text_2: autoDraw = False
+215.7167 	EXP 	text_2: autoDraw = False
+215.7167 	EXP 	fixation_target: autoDraw = True
+215.7167 	EXP 	corrAns_reminder_text: autoDraw = True
+215.7167 	EXP 	memory_2: autoDraw = True
+216.2319 	EXP 	fixation_target: autoDraw = False
+216.2319 	EXP 	corrAns_reminder_text: autoDraw = False
+216.2319 	EXP 	memory_2: autoDraw = False
+216.2319 	EXP 	target: opacity = 1.0
+216.2319 	EXP 	target: pos = array([ 300., -200.])
+216.2319 	EXP 	target: size = array([50, 80])
+216.2319 	EXP 	target: image = 'person1293.png'
+216.2319 	EXP 	dist1: opacity = 1.0
+216.2319 	EXP 	dist1: pos = array([-100.,  -50.])
+216.2319 	EXP 	dist1: size = array([28, 80])
+216.2319 	EXP 	dist1: image = 'person1501.png'
+216.2319 	EXP 	dist2: opacity = 1.0
+216.2319 	EXP 	dist2: pos = array([-300., -150.])
+216.2319 	EXP 	dist2: size = array([31, 80])
+216.2319 	EXP 	dist2: image = 'person1447.png'
+216.2319 	EXP 	dist3: opacity = 1.0
+216.2319 	EXP 	dist3: pos = array([-400.,   50.])
+216.2319 	EXP 	dist3: size = array([35, 80])
+216.2319 	EXP 	dist3: image = 'person1485.png'
+216.2319 	EXP 	dist4: opacity = 0.0
+216.2319 	EXP 	dist4: pos = array([  0., 200.])
+216.2319 	EXP 	dist4: size = array([80, 80])
+216.2319 	EXP 	dist4: image = 'blank.png'
+216.2319 	EXP 	dist5: opacity = 0.0
+216.2319 	EXP 	dist5: pos = array([ 200., -100.])
+216.2319 	EXP 	dist5: size = array([80, 80])
+216.2319 	EXP 	dist5: image = 'blank.png'
+216.2319 	EXP 	dist6: opacity = 0.0
+216.2319 	EXP 	dist6: pos = array([100., 250.])
+216.2319 	EXP 	dist6: size = array([80, 80])
+216.2319 	EXP 	dist6: image = 'blank.png'
+216.2319 	EXP 	dist7: opacity = 0.0
+216.2319 	EXP 	dist7: pos = array([400., 100.])
+216.2319 	EXP 	dist7: size = array([80, 80])
+216.2319 	EXP 	dist7: image = 'blank.png'
+216.2319 	EXP 	dist8: opacity = 0.0
+216.2319 	EXP 	dist8: pos = array([-200.,    0.])
+216.2319 	EXP 	dist8: size = array([80, 80])
+216.2319 	EXP 	dist8: image = 'blank.png'
+216.2319 	EXP 	memory: autoDraw = True
+216.2319 	EXP 	target: autoDraw = True
+216.2319 	EXP 	dist1: autoDraw = True
+216.2319 	EXP 	dist2: autoDraw = True
+216.2319 	EXP 	dist3: autoDraw = True
+216.2319 	EXP 	dist4: autoDraw = True
+216.2319 	EXP 	dist5: autoDraw = True
+216.2319 	EXP 	dist6: autoDraw = True
+216.2319 	EXP 	dist7: autoDraw = True
+216.2319 	EXP 	dist8: autoDraw = True
+217.0737 	DATA 	Keypress: m
+218.2406 	DATA 	Keypress: m
+220.2364 	EXP 	memory: autoDraw = False
+220.2364 	EXP 	target: autoDraw = False
+220.2364 	EXP 	dist1: autoDraw = False
+220.2364 	EXP 	dist2: autoDraw = False
+220.2364 	EXP 	dist3: autoDraw = False
+220.2364 	EXP 	dist4: autoDraw = False
+220.2364 	EXP 	dist5: autoDraw = False
+220.2364 	EXP 	dist6: autoDraw = False
+220.2364 	EXP 	dist7: autoDraw = False
+220.2364 	EXP 	dist8: autoDraw = False
+220.2364 	EXP 	memory: autoDraw = False
+220.2364 	EXP 	target: autoDraw = False
+220.2364 	EXP 	dist1: autoDraw = False
+220.2364 	EXP 	dist2: autoDraw = False
+220.2364 	EXP 	dist3: autoDraw = False
+220.2364 	EXP 	dist4: autoDraw = False
+220.2364 	EXP 	dist5: autoDraw = False
+220.2364 	EXP 	dist6: autoDraw = False
+220.2364 	EXP 	dist7: autoDraw = False
+220.2364 	EXP 	dist8: autoDraw = False
+220.2364 	EXP 	fixation_target_2: autoDraw = True
+220.2364 	EXP 	corrAns_reminder_text_2: autoDraw = True
+220.2364 	EXP 	search_txt_2: autoDraw = True
+220.4239 	DATA 	Keypress: m
+220.8329 	EXP 	fixation_target_2: autoDraw = False
+220.8329 	EXP 	corrAns_reminder_text_2: autoDraw = False
+220.8329 	EXP 	search_txt_2: autoDraw = False
+220.8329 	EXP 	fixation_target_2: autoDraw = False
+220.8329 	EXP 	corrAns_reminder_text_2: autoDraw = False
+220.8329 	EXP 	search_txt_2: autoDraw = False
+220.8329 	EXP 	search_img: opacity = 1.0
+220.8329 	EXP 	search_img: image = 'S1_building_028_person_014.jpg'
+220.8329 	EXP 	search_txt: autoDraw = True
+220.8329 	EXP 	search_img: autoDraw = True
+220.9378 	EXP 	New trial (rep=0, index=2): OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_044_dog_012'), ('FILE_SEARCH_IMAGE', 'S1_building_044_dog_012.jpg'), ('TARGET', 1), ('TARGET_NAME', 'dog1544.png'), ('TARGET_MEM', 'dog1544.png'), ('D1', 'dog1543.png'), ('D2', 'dog1592.png'), ('D3', 'dog1560.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')])
+220.9418 	DATA 	Keypress: m
+220.9525 	EXP 	search_txt: autoDraw = False
+220.9525 	EXP 	search_img: autoDraw = False
+220.9525 	EXP 	text_2: autoDraw = True
+220.9525 	EXP 	text_2: autoDraw = False
+220.9525 	EXP 	text_2: autoDraw = False
+220.9525 	EXP 	fixation_target: autoDraw = True
+220.9525 	EXP 	corrAns_reminder_text: autoDraw = True
+220.9525 	EXP 	memory_2: autoDraw = True
+221.4650 	EXP 	fixation_target: autoDraw = False
+221.4650 	EXP 	corrAns_reminder_text: autoDraw = False
+221.4650 	EXP 	memory_2: autoDraw = False
+221.4650 	EXP 	fixation_target: autoDraw = False
+221.4650 	EXP 	corrAns_reminder_text: autoDraw = False
+221.4650 	EXP 	memory_2: autoDraw = False
+221.4650 	EXP 	target: opacity = 1.0
+221.4650 	EXP 	target: pos = array([ 300., -200.])
+221.4650 	EXP 	target: size = array([44, 80])
+221.4650 	EXP 	target: image = 'dog1544.png'
+221.4650 	EXP 	dist1: opacity = 1.0
+221.4650 	EXP 	dist1: pos = array([-400.,  -50.])
+221.4650 	EXP 	dist1: size = array([80, 62])
+221.4650 	EXP 	dist1: image = 'dog1543.png'
+221.4650 	EXP 	dist2: opacity = 1.0
+221.4650 	EXP 	dist2: pos = array([-100.,  250.])
+221.4650 	EXP 	dist2: size = array([64, 80])
+221.4650 	EXP 	dist2: image = 'dog1592.png'
+221.4650 	EXP 	dist3: opacity = 1.0
+221.4650 	EXP 	dist3: pos = array([400., 100.])
+221.4650 	EXP 	dist3: size = array([38, 80])
+221.4650 	EXP 	dist3: image = 'dog1560.png'
+221.4650 	EXP 	dist4: opacity = 0.0
+221.4650 	EXP 	dist4: pos = array([200.,  50.])
+221.4650 	EXP 	dist4: size = array([80, 80])
+221.4650 	EXP 	dist4: image = 'blank.png'
+221.4650 	EXP 	dist5: opacity = 0.0
+221.4650 	EXP 	dist5: pos = array([   0., -100.])
+221.4650 	EXP 	dist5: size = array([80, 80])
+221.4650 	EXP 	dist5: image = 'blank.png'
+221.4650 	EXP 	dist6: opacity = 0.0
+221.4650 	EXP 	dist6: pos = array([100., 150.])
+221.4650 	EXP 	dist6: size = array([80, 80])
+221.4650 	EXP 	dist6: image = 'blank.png'
+221.4650 	EXP 	dist7: opacity = 0.0
+221.4650 	EXP 	dist7: pos = array([-300.,    0.])
+221.4650 	EXP 	dist7: size = array([80, 80])
+221.4650 	EXP 	dist7: image = 'blank.png'
+221.4650 	EXP 	dist8: opacity = 0.0
+221.4650 	EXP 	dist8: pos = array([-200., -150.])
+221.4650 	EXP 	dist8: size = array([80, 80])
+221.4650 	EXP 	dist8: image = 'blank.png'
+221.4650 	EXP 	memory: autoDraw = True
+221.4650 	EXP 	target: autoDraw = True
+221.4650 	EXP 	dist1: autoDraw = True
+221.4650 	EXP 	dist2: autoDraw = True
+221.4650 	EXP 	dist3: autoDraw = True
+221.4650 	EXP 	dist4: autoDraw = True
+221.4650 	EXP 	dist5: autoDraw = True
+221.4650 	EXP 	dist6: autoDraw = True
+221.4650 	EXP 	dist7: autoDraw = True
+221.4650 	EXP 	dist8: autoDraw = True
+223.8211 	DATA 	Keypress: m
+225.3688 	DATA 	Keypress: m
+225.4659 	EXP 	memory: autoDraw = False
+225.4659 	EXP 	target: autoDraw = False
+225.4659 	EXP 	dist1: autoDraw = False
+225.4659 	EXP 	dist2: autoDraw = False
+225.4659 	EXP 	dist3: autoDraw = False
+225.4659 	EXP 	dist4: autoDraw = False
+225.4659 	EXP 	dist5: autoDraw = False
+225.4659 	EXP 	dist6: autoDraw = False
+225.4659 	EXP 	dist7: autoDraw = False
+225.4659 	EXP 	dist8: autoDraw = False
+225.4659 	EXP 	memory: autoDraw = False
+225.4659 	EXP 	target: autoDraw = False
+225.4659 	EXP 	dist1: autoDraw = False
+225.4659 	EXP 	dist2: autoDraw = False
+225.4659 	EXP 	dist3: autoDraw = False
+225.4659 	EXP 	dist4: autoDraw = False
+225.4659 	EXP 	dist5: autoDraw = False
+225.4659 	EXP 	dist6: autoDraw = False
+225.4659 	EXP 	dist7: autoDraw = False
+225.4659 	EXP 	dist8: autoDraw = False
+225.4659 	EXP 	fixation_target_2: autoDraw = True
+225.4659 	EXP 	corrAns_reminder_text_2: autoDraw = True
+225.4659 	EXP 	search_txt_2: autoDraw = True
+225.8342 	DATA 	Keypress: m
+226.0529 	EXP 	fixation_target_2: autoDraw = False
+226.0529 	EXP 	corrAns_reminder_text_2: autoDraw = False
+226.0529 	EXP 	search_txt_2: autoDraw = False
+226.0529 	EXP 	search_img: opacity = 1.0
+226.0529 	EXP 	search_img: image = 'S1_building_044_dog_012.jpg'
+226.0529 	EXP 	search_txt: autoDraw = True
+226.0529 	EXP 	search_img: autoDraw = True
+226.2714 	EXP 	New trial (rep=0, index=3): OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_044_toys_003'), ('FILE_SEARCH_IMAGE', 'S1_shelves_044_toys_003.jpg'), ('TARGET', 1), ('TARGET_NAME', 'motorcycle341.png'), ('TARGET_MEM', 'motorcycle341.png'), ('D1', 'truck96.png'), ('D2', 'truck83.png'), ('D3', 'airplane19.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')])
+226.2742 	DATA 	Keypress: m
+226.2854 	EXP 	search_txt: autoDraw = False
+226.2854 	EXP 	search_img: autoDraw = False
+226.2854 	EXP 	text_2: autoDraw = True
+226.2854 	EXP 	text_2: autoDraw = False
+226.2854 	EXP 	text_2: autoDraw = False
+226.2854 	EXP 	fixation_target: autoDraw = True
+226.2854 	EXP 	corrAns_reminder_text: autoDraw = True
+226.2854 	EXP 	memory_2: autoDraw = True
+226.8021 	DATA 	Keypress: m
+226.8147 	EXP 	fixation_target: autoDraw = False
+226.8147 	EXP 	corrAns_reminder_text: autoDraw = False
+226.8147 	EXP 	memory_2: autoDraw = False
+226.8147 	EXP 	target: opacity = 1.0
+226.8147 	EXP 	target: pos = array([-100.,  100.])
+226.8147 	EXP 	target: size = array([75, 80])
+226.8147 	EXP 	target: image = 'motorcycle341.png'
+226.8147 	EXP 	dist1: opacity = 1.0
+226.8147 	EXP 	dist1: pos = array([   0., -200.])
+226.8147 	EXP 	dist1: size = array([80, 44])
+226.8147 	EXP 	dist1: image = 'truck96.png'
+226.8147 	EXP 	dist2: opacity = 1.0
+226.8147 	EXP 	dist2: pos = array([ 100., -100.])
+226.8147 	EXP 	dist2: size = array([80, 61])
+226.8147 	EXP 	dist2: image = 'truck83.png'
+226.8147 	EXP 	dist3: opacity = 1.0
+226.8147 	EXP 	dist3: pos = array([200., 250.])
+226.8147 	EXP 	dist3: size = array([80, 37])
+226.8147 	EXP 	dist3: image = 'airplane19.png'
+226.8147 	EXP 	dist4: opacity = 0.0
+226.8147 	EXP 	dist4: pos = array([-300.,  -50.])
+226.8147 	EXP 	dist4: size = array([80, 80])
+226.8147 	EXP 	dist4: image = 'blank.png'
+226.8147 	EXP 	dist5: opacity = 0.0
+226.8147 	EXP 	dist5: pos = array([300., 150.])
+226.8147 	EXP 	dist5: size = array([80, 80])
+226.8147 	EXP 	dist5: image = 'blank.png'
+226.8147 	EXP 	dist6: opacity = 0.0
+226.8147 	EXP 	dist6: pos = array([-200.,   50.])
+226.8147 	EXP 	dist6: size = array([80, 80])
+226.8147 	EXP 	dist6: image = 'blank.png'
+226.8147 	EXP 	dist7: opacity = 0.0
+226.8147 	EXP 	dist7: pos = array([-400.,    0.])
+226.8147 	EXP 	dist7: size = array([80, 80])
+226.8147 	EXP 	dist7: image = 'blank.png'
+226.8147 	EXP 	dist8: opacity = 0.0
+226.8147 	EXP 	dist8: pos = array([ 400., -150.])
+226.8147 	EXP 	dist8: size = array([80, 80])
+226.8147 	EXP 	dist8: image = 'blank.png'
+226.8147 	EXP 	memory: autoDraw = True
+226.8147 	EXP 	target: autoDraw = True
+226.8147 	EXP 	dist1: autoDraw = True
+226.8147 	EXP 	dist2: autoDraw = True
+226.8147 	EXP 	dist3: autoDraw = True
+226.8147 	EXP 	dist4: autoDraw = True
+226.8147 	EXP 	dist5: autoDraw = True
+226.8147 	EXP 	dist6: autoDraw = True
+226.8147 	EXP 	dist7: autoDraw = True
+226.8147 	EXP 	dist8: autoDraw = True
+230.8202 	EXP 	memory: autoDraw = False
+230.8202 	EXP 	target: autoDraw = False
+230.8202 	EXP 	dist1: autoDraw = False
+230.8202 	EXP 	dist2: autoDraw = False
+230.8202 	EXP 	dist3: autoDraw = False
+230.8202 	EXP 	dist4: autoDraw = False
+230.8202 	EXP 	dist5: autoDraw = False
+230.8202 	EXP 	dist6: autoDraw = False
+230.8202 	EXP 	dist7: autoDraw = False
+230.8202 	EXP 	dist8: autoDraw = False
+230.8202 	EXP 	memory: autoDraw = False
+230.8202 	EXP 	target: autoDraw = False
+230.8202 	EXP 	dist1: autoDraw = False
+230.8202 	EXP 	dist2: autoDraw = False
+230.8202 	EXP 	dist3: autoDraw = False
+230.8202 	EXP 	dist4: autoDraw = False
+230.8202 	EXP 	dist5: autoDraw = False
+230.8202 	EXP 	dist6: autoDraw = False
+230.8202 	EXP 	dist7: autoDraw = False
+230.8202 	EXP 	dist8: autoDraw = False
+230.8202 	EXP 	fixation_target_2: autoDraw = True
+230.8202 	EXP 	corrAns_reminder_text_2: autoDraw = True
+230.8202 	EXP 	search_txt_2: autoDraw = True
+231.3903 	DATA 	Keypress: m
+231.4043 	EXP 	fixation_target_2: autoDraw = False
+231.4043 	EXP 	corrAns_reminder_text_2: autoDraw = False
+231.4043 	EXP 	search_txt_2: autoDraw = False
+231.4043 	EXP 	fixation_target_2: autoDraw = False
+231.4043 	EXP 	corrAns_reminder_text_2: autoDraw = False
+231.4043 	EXP 	search_txt_2: autoDraw = False
+231.4043 	EXP 	search_img: opacity = 1.0
+231.4043 	EXP 	search_img: image = 'S1_shelves_044_toys_003.jpg'
+231.4043 	EXP 	search_txt: autoDraw = True
+231.4043 	EXP 	search_img: autoDraw = True
+232.2645 	EXP 	window1: mouseVisible = True

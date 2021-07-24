@@ -1,0 +1,773 @@
+0.36105500000000035	EXP	Created Window = Window( name=Window, fullscr=true, color={"_rgb":[1,1,1],"_int":16777215,"_hex":"#ffffff"}, units=height, waitBlanking=true, autoLog=true, size=[1914,938] )
+3.8793000000000006	DATA	Keydown: Backspace
+3.965580000000001	DATA	Keydown: Backspace
+4.1205500000000015	DATA	Keydown: Backspace
+4.287890000000001	DATA	Keydown: Backspace
+4.4664100000000015	DATA	Keydown: Backspace
+4.6039850000000015	DATA	Keydown: Backspace
+4.849485000000001	DATA	Keydown: Process
+5.008765	DATA	Keydown: Process
+5.332025000000002	DATA	Keydown: Process
+5.7476150000000015	DATA	Keydown: Process
+6.184345	DATA	Keydown: Process
+8.432960000000001	DATA	Keydown: Backspace
+8.635640000000002	DATA	Keydown: Backspace
+8.797165000000001	DATA	Keydown: Backspace
+8.929875000000001	DATA	Keydown: Backspace
+9.064200000000001	DATA	Keydown: Process
+9.482930000000001	DATA	Keydown: Process
+2147.8863800000004	EXP	Created contact_info1 = ImageStim( name=contact_info1, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,-0.2], size=[0.9,0.1], image={}, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=true, depth=-4, flipHoriz=null, flipVert=null )
+2147.8898700000004	EXP	Created consent_question = TextStim( name=consent_question, win=Object (circular), autoDraw=null, autoLog=true, units=norm, ori=null, opacity=1, pos=[0,0], size=undefined, text=default text, font=Arial, color={"_hex":"#000000","_rgb":[0,0,0]}, contrast=1, height=0.05, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1.5, flipHoriz=null, flipVert=null )
+2147.8928300000002	EXP	Created consent_1 = ImageStim( name=consent_1, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=[1,0.8533], image={}, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=true, depth=null, flipHoriz=null, flipVert=null )
+2147.895585	EXP	Created text_3 = TextStim( name=text_3, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,-0.49], size=undefined, text=After reading, press Space to continue
+
+, font=Arial, color={"_hex":"#000000","_rgb":[0,0,0]}, contrast=1, height=0.03, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2147.8996800000004	EXP	Created consent = ImageStim( name=consent, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=[1,0.8533], image={}, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=true, depth=null, flipHoriz=null, flipVert=null )
+2147.9032950000005	EXP	Created text_4 = TextStim( name=text_4, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,-0.49], size=undefined, text=After reading, press Space to continue
+
+, font=Arial, color={"_hex":"#000000","_rgb":[0,0,0]}, contrast=1, height=0.03, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2147.9070250000004	EXP	Created consent_2 = ImageStim( name=consent_2, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=[1,0.8533], image={}, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=true, depth=null, flipHoriz=null, flipVert=null )
+2147.9125650000005	EXP	Created text_5 = TextStim( name=text_5, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,-0.49], size=undefined, text=I consent (Y) I do not consent (Esc)
+, font=Arial, color={"_hex":"#000000","_rgb":[0,0,0]}, contrast=1, height=0.03, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2147.9148150000005	EXP	Created gender_question = TextStim( name=gender_question, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=undefined, text=In order to allow us to describe our sample, we wo~), font=Arial, color={"_hex":"#000000","_rgb":[0,0,0]}, contrast=1, height=0.04, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1.5, flipHoriz=null, flipVert=null )
+2147.9176350000002	EXP	Created inst_text = TextStim( name=inst_text, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=undefined, text=The next screen shown will require you to memorize~, font=Arial, color={"_hex":"#000000","_rgb":[0,0,0]}, contrast=1, height=0.04, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2147.9247350000005	EXP	Created corrAns_reminder_text = TextStim( name=corrAns_reminder_text, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,4], size=undefined, text=Present: m
+
+Absent: v, font=Arial, color={"_hex":"#000000","_rgb":[0,0,0]}, contrast=1, height=0.1, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2147.9268200000006	EXP	Created memory_2 = TextStim( name=memory_2, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0.44], size=undefined, text=Memorise...
+
+, font=Arial, color={"_hex":"#FF0000","_rgb":[1,0,0]}, contrast=1, height=0.03, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2147.9283150000006	EXP	Created memory = TextStim( name=memory, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0.44], size=undefined, text=Memorise...
+
+, font=Arial, color={"_hex":"#FF0000","_rgb":[1,0,0]}, contrast=1, height=0.03, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2147.9320050000006	EXP	Created target = ImageStim( name=target, win=Object (circular), autoDraw=null, autoLog=true, units=pix, ori=null, opacity=1, pos=[0,0], size=undefined, image=undefined, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=null, depth=-2, flipHoriz=null, flipVert=null )
+2147.9358400000006	EXP	Created dist1 = ImageStim( name=dist1, win=Object (circular), autoDraw=null, autoLog=true, units=pix, ori=null, opacity=1, pos=[0,0], size=undefined, image=undefined, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=null, depth=-3, flipHoriz=null, flipVert=null )
+2147.9441300000003	EXP	Created dist2 = ImageStim( name=dist2, win=Object (circular), autoDraw=null, autoLog=true, units=pix, ori=null, opacity=1, pos=[0,0], size=undefined, image=undefined, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=null, depth=-4, flipHoriz=null, flipVert=null )
+2147.95247	EXP	Created dist3 = ImageStim( name=dist3, win=Object (circular), autoDraw=null, autoLog=true, units=pix, ori=null, opacity=1, pos=[0,0], size=undefined, image=undefined, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=null, depth=-5, flipHoriz=null, flipVert=null )
+2147.9614100000003	EXP	Created dist4 = ImageStim( name=dist4, win=Object (circular), autoDraw=null, autoLog=true, units=pix, ori=null, opacity=1, pos=[0,0], size=undefined, image=undefined, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=null, depth=-6, flipHoriz=null, flipVert=null )
+2147.9689600000006	EXP	Created dist5 = ImageStim( name=dist5, win=Object (circular), autoDraw=null, autoLog=true, units=pix, ori=null, opacity=1, pos=[0,0], size=undefined, image=undefined, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=null, depth=-7, flipHoriz=null, flipVert=null )
+2147.9735200000005	EXP	Created dist6 = ImageStim( name=dist6, win=Object (circular), autoDraw=null, autoLog=true, units=pix, ori=null, opacity=1, pos=[0,0], size=undefined, image=undefined, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=null, depth=-8, flipHoriz=null, flipVert=null )
+2147.9778650000003	EXP	Created dist7 = ImageStim( name=dist7, win=Object (circular), autoDraw=null, autoLog=true, units=pix, ori=null, opacity=1, pos=[0,0], size=undefined, image=undefined, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=null, depth=-9, flipHoriz=null, flipVert=null )
+2147.9825200000005	EXP	Created dist8 = ImageStim( name=dist8, win=Object (circular), autoDraw=null, autoLog=true, units=pix, ori=null, opacity=1, pos=[0,0], size=undefined, image=undefined, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=null, depth=-10, flipHoriz=null, flipVert=null )
+2147.9864900000002	EXP	Created corrAns_reminder_text_2 = TextStim( name=corrAns_reminder_text_2, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,4], size=undefined, text=Present: m
+
+Absent: v, font=Arial, color={"_hex":"#000000","_rgb":[0,0,0]}, contrast=1, height=0.1, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2147.9885850000005	EXP	Created search_txt_2 = TextStim( name=search_txt_2, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0.44], size=undefined, text=Search...
+
+, font=Arial, color={"_hex":"#008000","_rgb":[0,0.5019607843137255,0]}, contrast=1, height=0.03, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2147.9900900000002	EXP	Created search_txt = TextStim( name=search_txt, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0.44], size=undefined, text=Search...
+
+, font=Arial, color={"_hex":"#008000","_rgb":[0,0.5019607843137255,0]}, contrast=1, height=0.03, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2147.9960300000002	EXP	Created search_img = ImageStim( name=search_img, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=[0.8533,0.8533], image=undefined, mask=undefined, color={"_rgb":[1,1,1]}, contrast=1, texRes=128, interpolate=null, depth=-1, flipHoriz=null, flipVert=null )
+2147.9990250000005	EXP	Created text_2 = TextStim( name=text_2, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=undefined, text=Press 'Space Bar' to continue, font=Arial, color={"_hex":"#000000","_rgb":[0,0,0]}, contrast=1, height=0.04, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2148.0011350000004	EXP	Created text = TextStim( name=text, win=Object (circular), autoDraw=null, autoLog=true, units=height, ori=null, opacity=1, pos=[0,0], size=undefined, text=default text, font=Arial, color={"_hex":"#000000","_rgb":[0,0,0]}, contrast=1, height=0.05, bold=null, italic=null, alignHoriz=left, alignVert=center, wrapWidth=1, flipHoriz=null, flipVert=null )
+2148.1046850000002	EXP	contact_info1: units = "height"
+2148.1046850000002	EXP	contact_info1: ori = 0
+2148.1046850000002	EXP	contact_info1: opacity = 1
+2148.1046850000002	EXP	contact_info1: pos = [0,-0.2]
+2148.1046850000002	EXP	contact_info1: size = [0.9,0.1]
+2148.1046850000002	EXP	contact_info1: image = {}
+2148.1046850000002	EXP	contact_info1: mask = undefined
+2148.1046850000002	EXP	contact_info1: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	contact_info1: contrast = 1
+2148.1046850000002	EXP	contact_info1: texRes = 128
+2148.1046850000002	EXP	contact_info1: interpolate = true
+2148.1046850000002	EXP	contact_info1: depth = -4
+2148.1046850000002	EXP	contact_info1: flipHoriz = false
+2148.1046850000002	EXP	contact_info1: flipVert = false
+2148.1046850000002	EXP	consent_question: units = "norm"
+2148.1046850000002	EXP	consent_question: ori = 0
+2148.1046850000002	EXP	consent_question: opacity = 1
+2148.1046850000002	EXP	consent_question: pos = [0,0]
+2148.1046850000002	EXP	consent_question: size = undefined
+2148.1046850000002	EXP	consent_question: text = "default text"
+2148.1046850000002	EXP	consent_question: font = "Arial"
+2148.1046850000002	EXP	consent_question: color = {"_hex":"#000000","_rgb":[0,0,0]}
+2148.1046850000002	EXP	consent_question: contrast = 1
+2148.1046850000002	EXP	consent_question: height = 0.05
+2148.1046850000002	EXP	consent_question: bold = false
+2148.1046850000002	EXP	consent_question: italic = false
+2148.1046850000002	EXP	consent_question: alignHoriz = "left"
+2148.1046850000002	EXP	consent_question: alignVert = "center"
+2148.1046850000002	EXP	consent_question: wrapWidth = 1.5
+2148.1046850000002	EXP	consent_question: flipHoriz = false
+2148.1046850000002	EXP	consent_question: flipVert = false
+2148.1046850000002	EXP	consent_1: units = "height"
+2148.1046850000002	EXP	consent_1: ori = 0
+2148.1046850000002	EXP	consent_1: opacity = 1
+2148.1046850000002	EXP	consent_1: pos = [0,0]
+2148.1046850000002	EXP	consent_1: size = [1,0.8533]
+2148.1046850000002	EXP	consent_1: image = {}
+2148.1046850000002	EXP	consent_1: mask = undefined
+2148.1046850000002	EXP	consent_1: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	consent_1: contrast = 1
+2148.1046850000002	EXP	consent_1: texRes = 128
+2148.1046850000002	EXP	consent_1: interpolate = true
+2148.1046850000002	EXP	consent_1: depth = 0
+2148.1046850000002	EXP	consent_1: flipHoriz = false
+2148.1046850000002	EXP	consent_1: flipVert = false
+2148.1046850000002	EXP	text_3: units = "height"
+2148.1046850000002	EXP	text_3: ori = 0
+2148.1046850000002	EXP	text_3: opacity = 1
+2148.1046850000002	EXP	text_3: pos = [0,-0.49]
+2148.1046850000002	EXP	text_3: size = undefined
+2148.1046850000002	EXP	text_3: text = "After reading, press Space to continue\n\n"
+2148.1046850000002	EXP	text_3: font = "Arial"
+2148.1046850000002	EXP	text_3: color = {"_hex":"#000000","_rgb":[0,0,0]}
+2148.1046850000002	EXP	text_3: contrast = 1
+2148.1046850000002	EXP	text_3: height = 0.03
+2148.1046850000002	EXP	text_3: bold = false
+2148.1046850000002	EXP	text_3: italic = false
+2148.1046850000002	EXP	text_3: alignHoriz = "left"
+2148.1046850000002	EXP	text_3: alignVert = "center"
+2148.1046850000002	EXP	text_3: wrapWidth = 1
+2148.1046850000002	EXP	text_3: flipHoriz = false
+2148.1046850000002	EXP	text_3: flipVert = false
+2148.1046850000002	EXP	consent: units = "height"
+2148.1046850000002	EXP	consent: ori = 0
+2148.1046850000002	EXP	consent: opacity = 1
+2148.1046850000002	EXP	consent: pos = [0,0]
+2148.1046850000002	EXP	consent: size = [1,0.8533]
+2148.1046850000002	EXP	consent: image = {}
+2148.1046850000002	EXP	consent: mask = undefined
+2148.1046850000002	EXP	consent: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	consent: contrast = 1
+2148.1046850000002	EXP	consent: texRes = 128
+2148.1046850000002	EXP	consent: interpolate = true
+2148.1046850000002	EXP	consent: depth = 0
+2148.1046850000002	EXP	consent: flipHoriz = false
+2148.1046850000002	EXP	consent: flipVert = false
+2148.1046850000002	EXP	text_4: units = "height"
+2148.1046850000002	EXP	text_4: ori = 0
+2148.1046850000002	EXP	text_4: opacity = 1
+2148.1046850000002	EXP	text_4: pos = [0,-0.49]
+2148.1046850000002	EXP	text_4: size = undefined
+2148.1046850000002	EXP	text_4: text = "After reading, press Space to continue\n\n"
+2148.1046850000002	EXP	text_4: font = "Arial"
+2148.1046850000002	EXP	text_4: color = {"_hex":"#000000","_rgb":[0,0,0]}
+2148.1046850000002	EXP	text_4: contrast = 1
+2148.1046850000002	EXP	text_4: height = 0.03
+2148.1046850000002	EXP	text_4: bold = false
+2148.1046850000002	EXP	text_4: italic = false
+2148.1046850000002	EXP	text_4: alignHoriz = "left"
+2148.1046850000002	EXP	text_4: alignVert = "center"
+2148.1046850000002	EXP	text_4: wrapWidth = 1
+2148.1046850000002	EXP	text_4: flipHoriz = false
+2148.1046850000002	EXP	text_4: flipVert = false
+2148.1046850000002	EXP	consent_2: units = "height"
+2148.1046850000002	EXP	consent_2: ori = 0
+2148.1046850000002	EXP	consent_2: opacity = 1
+2148.1046850000002	EXP	consent_2: pos = [0,0]
+2148.1046850000002	EXP	consent_2: size = [1,0.8533]
+2148.1046850000002	EXP	consent_2: image = {}
+2148.1046850000002	EXP	consent_2: mask = undefined
+2148.1046850000002	EXP	consent_2: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	consent_2: contrast = 1
+2148.1046850000002	EXP	consent_2: texRes = 128
+2148.1046850000002	EXP	consent_2: interpolate = true
+2148.1046850000002	EXP	consent_2: depth = 0
+2148.1046850000002	EXP	consent_2: flipHoriz = false
+2148.1046850000002	EXP	consent_2: flipVert = false
+2148.1046850000002	EXP	text_5: units = "height"
+2148.1046850000002	EXP	text_5: ori = 0
+2148.1046850000002	EXP	text_5: opacity = 1
+2148.1046850000002	EXP	text_5: pos = [0,-0.49]
+2148.1046850000002	EXP	text_5: size = undefined
+2148.1046850000002	EXP	text_5: text = "I consent (Y) I do not consent (Esc)\n"
+2148.1046850000002	EXP	text_5: font = "Arial"
+2148.1046850000002	EXP	text_5: color = {"_hex":"#000000","_rgb":[0,0,0]}
+2148.1046850000002	EXP	text_5: contrast = 1
+2148.1046850000002	EXP	text_5: height = 0.03
+2148.1046850000002	EXP	text_5: bold = false
+2148.1046850000002	EXP	text_5: italic = false
+2148.1046850000002	EXP	text_5: alignHoriz = "left"
+2148.1046850000002	EXP	text_5: alignVert = "center"
+2148.1046850000002	EXP	text_5: wrapWidth = 1
+2148.1046850000002	EXP	text_5: flipHoriz = false
+2148.1046850000002	EXP	text_5: flipVert = false
+2148.1046850000002	EXP	gender_question: units = "height"
+2148.1046850000002	EXP	gender_question: ori = 0
+2148.1046850000002	EXP	gender_question: opacity = 1
+2148.1046850000002	EXP	gender_question: pos = [0,0]
+2148.1046850000002	EXP	gender_question: size = undefined
+2148.1046850000002	EXP	gender_question: text = "In order to allow us to describe our sample, we would now like you to answer some demographic questions.\n\nWhat is your gender?\n\nWoman (W)\nMan(M)\nNon-binary (N)\nDifferent identity (D)\nPrefer not to say (P)"
+2148.1046850000002	EXP	gender_question: font = "Arial"
+2148.1046850000002	EXP	gender_question: color = {"_hex":"#000000","_rgb":[0,0,0]}
+2148.1046850000002	EXP	gender_question: contrast = 1
+2148.1046850000002	EXP	gender_question: height = 0.04
+2148.1046850000002	EXP	gender_question: bold = false
+2148.1046850000002	EXP	gender_question: italic = false
+2148.1046850000002	EXP	gender_question: alignHoriz = "left"
+2148.1046850000002	EXP	gender_question: alignVert = "center"
+2148.1046850000002	EXP	gender_question: wrapWidth = 1.5
+2148.1046850000002	EXP	gender_question: flipHoriz = false
+2148.1046850000002	EXP	gender_question: flipVert = false
+2148.1046850000002	EXP	inst_text: units = "height"
+2148.1046850000002	EXP	inst_text: ori = 0
+2148.1046850000002	EXP	inst_text: opacity = 1
+2148.1046850000002	EXP	inst_text: pos = [0,0]
+2148.1046850000002	EXP	inst_text: size = undefined
+2148.1046850000002	EXP	inst_text: text = "The next screen shown will require you to memorize the targets.\n\nThis will be followed by a 'Search' screen, \nin which you will use the keys below to indicate if a target is present or absent. \nAt most one of the targets will be present in the search screen.\n\n'M' ->present\n'V'  <-absent \n\nReady? Press 'S' \nto start \n\n"
+2148.1046850000002	EXP	inst_text: font = "Arial"
+2148.1046850000002	EXP	inst_text: color = {"_hex":"#000000","_rgb":[0,0,0]}
+2148.1046850000002	EXP	inst_text: contrast = 1
+2148.1046850000002	EXP	inst_text: height = 0.04
+2148.1046850000002	EXP	inst_text: bold = false
+2148.1046850000002	EXP	inst_text: italic = false
+2148.1046850000002	EXP	inst_text: alignHoriz = "left"
+2148.1046850000002	EXP	inst_text: alignVert = "center"
+2148.1046850000002	EXP	inst_text: wrapWidth = 1
+2148.1046850000002	EXP	inst_text: flipHoriz = false
+2148.1046850000002	EXP	inst_text: flipVert = false
+2148.1046850000002	EXP	fixation_target: units = "pix"
+2148.1046850000002	EXP	fixation_target: ori = 0
+2148.1046850000002	EXP	fixation_target: opacity = 1
+2148.1046850000002	EXP	fixation_target: pos = [0,0]
+2148.1046850000002	EXP	fixation_target: size = [20,20]
+2148.1046850000002	EXP	fixation_target: lineWidth = 1
+2148.1046850000002	EXP	fixation_target: lineColor = {"_rgb":[0,0,0]}
+2148.1046850000002	EXP	fixation_target: fillColor = {"_rgb":[1,0.5,0.5]}
+2148.1046850000002	EXP	fixation_target: vertices = [[-0.1,0.5],[0.1,0.5],[0.1,0.1],[0.5,0.1],[0.5,-0.1],[0.1,-0.1],[0.1,-0.5],[-0.1,-0.5],[-0.1,-0.1],[-0.5,-0.1],[-0.5,0.1],[-0.1,0.1]]
+2148.1046850000002	EXP	fixation_target: closeShape = true
+2148.1046850000002	EXP	fixation_target: contrast = 1
+2148.1046850000002	EXP	fixation_target: depth = 0
+2148.1046850000002	EXP	fixation_target: interpolate = true
+2148.1046850000002	EXP	corrAns_reminder_text: units = "height"
+2148.1046850000002	EXP	corrAns_reminder_text: ori = 0
+2148.1046850000002	EXP	corrAns_reminder_text: opacity = 1
+2148.1046850000002	EXP	corrAns_reminder_text: pos = [0,4]
+2148.1046850000002	EXP	corrAns_reminder_text: size = undefined
+2148.1046850000002	EXP	corrAns_reminder_text: text = "Present: m\n\nAbsent: v"
+2148.1046850000002	EXP	corrAns_reminder_text: font = "Arial"
+2148.1046850000002	EXP	corrAns_reminder_text: color = {"_hex":"#000000","_rgb":[0,0,0]}
+2148.1046850000002	EXP	corrAns_reminder_text: contrast = 1
+2148.1046850000002	EXP	corrAns_reminder_text: height = 0.1
+2148.1046850000002	EXP	corrAns_reminder_text: bold = false
+2148.1046850000002	EXP	corrAns_reminder_text: italic = false
+2148.1046850000002	EXP	corrAns_reminder_text: alignHoriz = "left"
+2148.1046850000002	EXP	corrAns_reminder_text: alignVert = "center"
+2148.1046850000002	EXP	corrAns_reminder_text: wrapWidth = 1
+2148.1046850000002	EXP	corrAns_reminder_text: flipHoriz = false
+2148.1046850000002	EXP	corrAns_reminder_text: flipVert = false
+2148.1046850000002	EXP	memory_2: units = "height"
+2148.1046850000002	EXP	memory_2: ori = 0
+2148.1046850000002	EXP	memory_2: opacity = 1
+2148.1046850000002	EXP	memory_2: pos = [0,0.44]
+2148.1046850000002	EXP	memory_2: size = undefined
+2148.1046850000002	EXP	memory_2: text = "Memorise...\n\n"
+2148.1046850000002	EXP	memory_2: font = "Arial"
+2148.1046850000002	EXP	memory_2: color = {"_hex":"#FF0000","_rgb":[1,0,0]}
+2148.1046850000002	EXP	memory_2: contrast = 1
+2148.1046850000002	EXP	memory_2: height = 0.03
+2148.1046850000002	EXP	memory_2: bold = false
+2148.1046850000002	EXP	memory_2: italic = false
+2148.1046850000002	EXP	memory_2: alignHoriz = "left"
+2148.1046850000002	EXP	memory_2: alignVert = "center"
+2148.1046850000002	EXP	memory_2: wrapWidth = 1
+2148.1046850000002	EXP	memory_2: flipHoriz = false
+2148.1046850000002	EXP	memory_2: flipVert = false
+2148.1046850000002	EXP	memory: units = "height"
+2148.1046850000002	EXP	memory: ori = 0
+2148.1046850000002	EXP	memory: opacity = 1
+2148.1046850000002	EXP	memory: pos = [0,0.44]
+2148.1046850000002	EXP	memory: size = undefined
+2148.1046850000002	EXP	memory: text = "Memorise...\n\n"
+2148.1046850000002	EXP	memory: font = "Arial"
+2148.1046850000002	EXP	memory: color = {"_hex":"#FF0000","_rgb":[1,0,0]}
+2148.1046850000002	EXP	memory: contrast = 1
+2148.1046850000002	EXP	memory: height = 0.03
+2148.1046850000002	EXP	memory: bold = false
+2148.1046850000002	EXP	memory: italic = false
+2148.1046850000002	EXP	memory: alignHoriz = "left"
+2148.1046850000002	EXP	memory: alignVert = "center"
+2148.1046850000002	EXP	memory: wrapWidth = 1
+2148.1046850000002	EXP	memory: flipHoriz = false
+2148.1046850000002	EXP	memory: flipVert = false
+2148.1046850000002	EXP	target: units = "pix"
+2148.1046850000002	EXP	target: ori = 0
+2148.1046850000002	EXP	target: opacity = 1
+2148.1046850000002	EXP	target: pos = [0,0]
+2148.1046850000002	EXP	target: size = undefined
+2148.1046850000002	EXP	target: image = undefined
+2148.1046850000002	EXP	target: mask = undefined
+2148.1046850000002	EXP	target: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	target: contrast = 1
+2148.1046850000002	EXP	target: texRes = 128
+2148.1046850000002	EXP	target: interpolate = false
+2148.1046850000002	EXP	target: depth = -2
+2148.1046850000002	EXP	target: flipHoriz = false
+2148.1046850000002	EXP	target: flipVert = false
+2148.1046850000002	EXP	dist1: units = "pix"
+2148.1046850000002	EXP	dist1: ori = 0
+2148.1046850000002	EXP	dist1: opacity = 1
+2148.1046850000002	EXP	dist1: pos = [0,0]
+2148.1046850000002	EXP	dist1: size = undefined
+2148.1046850000002	EXP	dist1: image = undefined
+2148.1046850000002	EXP	dist1: mask = undefined
+2148.1046850000002	EXP	dist1: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	dist1: contrast = 1
+2148.1046850000002	EXP	dist1: texRes = 128
+2148.1046850000002	EXP	dist1: interpolate = false
+2148.1046850000002	EXP	dist1: depth = -3
+2148.1046850000002	EXP	dist1: flipHoriz = false
+2148.1046850000002	EXP	dist1: flipVert = false
+2148.1046850000002	EXP	dist2: units = "pix"
+2148.1046850000002	EXP	dist2: ori = 0
+2148.1046850000002	EXP	dist2: opacity = 1
+2148.1046850000002	EXP	dist2: pos = [0,0]
+2148.1046850000002	EXP	dist2: size = undefined
+2148.1046850000002	EXP	dist2: image = undefined
+2148.1046850000002	EXP	dist2: mask = undefined
+2148.1046850000002	EXP	dist2: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	dist2: contrast = 1
+2148.1046850000002	EXP	dist2: texRes = 128
+2148.1046850000002	EXP	dist2: interpolate = false
+2148.1046850000002	EXP	dist2: depth = -4
+2148.1046850000002	EXP	dist2: flipHoriz = false
+2148.1046850000002	EXP	dist2: flipVert = false
+2148.1046850000002	EXP	dist3: units = "pix"
+2148.1046850000002	EXP	dist3: ori = 0
+2148.1046850000002	EXP	dist3: opacity = 1
+2148.1046850000002	EXP	dist3: pos = [0,0]
+2148.1046850000002	EXP	dist3: size = undefined
+2148.1046850000002	EXP	dist3: image = undefined
+2148.1046850000002	EXP	dist3: mask = undefined
+2148.1046850000002	EXP	dist3: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	dist3: contrast = 1
+2148.1046850000002	EXP	dist3: texRes = 128
+2148.1046850000002	EXP	dist3: interpolate = false
+2148.1046850000002	EXP	dist3: depth = -5
+2148.1046850000002	EXP	dist3: flipHoriz = false
+2148.1046850000002	EXP	dist3: flipVert = false
+2148.1046850000002	EXP	dist4: units = "pix"
+2148.1046850000002	EXP	dist4: ori = 0
+2148.1046850000002	EXP	dist4: opacity = 1
+2148.1046850000002	EXP	dist4: pos = [0,0]
+2148.1046850000002	EXP	dist4: size = undefined
+2148.1046850000002	EXP	dist4: image = undefined
+2148.1046850000002	EXP	dist4: mask = undefined
+2148.1046850000002	EXP	dist4: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	dist4: contrast = 1
+2148.1046850000002	EXP	dist4: texRes = 128
+2148.1046850000002	EXP	dist4: interpolate = false
+2148.1046850000002	EXP	dist4: depth = -6
+2148.1046850000002	EXP	dist4: flipHoriz = false
+2148.1046850000002	EXP	dist4: flipVert = false
+2148.1046850000002	EXP	dist5: units = "pix"
+2148.1046850000002	EXP	dist5: ori = 0
+2148.1046850000002	EXP	dist5: opacity = 1
+2148.1046850000002	EXP	dist5: pos = [0,0]
+2148.1046850000002	EXP	dist5: size = undefined
+2148.1046850000002	EXP	dist5: image = undefined
+2148.1046850000002	EXP	dist5: mask = undefined
+2148.1046850000002	EXP	dist5: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	dist5: contrast = 1
+2148.1046850000002	EXP	dist5: texRes = 128
+2148.1046850000002	EXP	dist5: interpolate = false
+2148.1046850000002	EXP	dist5: depth = -7
+2148.1046850000002	EXP	dist5: flipHoriz = false
+2148.1046850000002	EXP	dist5: flipVert = false
+2148.1046850000002	EXP	dist6: units = "pix"
+2148.1046850000002	EXP	dist6: ori = 0
+2148.1046850000002	EXP	dist6: opacity = 1
+2148.1046850000002	EXP	dist6: pos = [0,0]
+2148.1046850000002	EXP	dist6: size = undefined
+2148.1046850000002	EXP	dist6: image = undefined
+2148.1046850000002	EXP	dist6: mask = undefined
+2148.1046850000002	EXP	dist6: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	dist6: contrast = 1
+2148.1046850000002	EXP	dist6: texRes = 128
+2148.1046850000002	EXP	dist6: interpolate = false
+2148.1046850000002	EXP	dist6: depth = -8
+2148.1046850000002	EXP	dist6: flipHoriz = false
+2148.1046850000002	EXP	dist6: flipVert = false
+2148.1046850000002	EXP	dist7: units = "pix"
+2148.1046850000002	EXP	dist7: ori = 0
+2148.1046850000002	EXP	dist7: opacity = 1
+2148.1046850000002	EXP	dist7: pos = [0,0]
+2148.1046850000002	EXP	dist7: size = undefined
+2148.1046850000002	EXP	dist7: image = undefined
+2148.1046850000002	EXP	dist7: mask = undefined
+2148.1046850000002	EXP	dist7: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	dist7: contrast = 1
+2148.1046850000002	EXP	dist7: texRes = 128
+2148.1046850000002	EXP	dist7: interpolate = false
+2148.1046850000002	EXP	dist7: depth = -9
+2148.1046850000002	EXP	dist7: flipHoriz = false
+2148.1046850000002	EXP	dist7: flipVert = false
+2148.1046850000002	EXP	dist8: units = "pix"
+2148.1046850000002	EXP	dist8: ori = 0
+2148.1046850000002	EXP	dist8: opacity = 1
+2148.1046850000002	EXP	dist8: pos = [0,0]
+2148.1046850000002	EXP	dist8: size = undefined
+2148.1046850000002	EXP	dist8: image = undefined
+2148.1046850000002	EXP	dist8: mask = undefined
+2148.1046850000002	EXP	dist8: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	dist8: contrast = 1
+2148.1046850000002	EXP	dist8: texRes = 128
+2148.1046850000002	EXP	dist8: interpolate = false
+2148.1046850000002	EXP	dist8: depth = -10
+2148.1046850000002	EXP	dist8: flipHoriz = false
+2148.1046850000002	EXP	dist8: flipVert = false
+2148.1046850000002	EXP	fixation_target_2: units = "pix"
+2148.1046850000002	EXP	fixation_target_2: ori = 0
+2148.1046850000002	EXP	fixation_target_2: opacity = 1
+2148.1046850000002	EXP	fixation_target_2: pos = [0,0]
+2148.1046850000002	EXP	fixation_target_2: size = [1,1]
+2148.1046850000002	EXP	fixation_target_2: lineWidth = 1
+2148.1046850000002	EXP	fixation_target_2: lineColor = {"_rgb":[0,0,0]}
+2148.1046850000002	EXP	fixation_target_2: fillColor = {"_rgb":[0.5,1,0.5]}
+2148.1046850000002	EXP	fixation_target_2: vertices = [[-10,-10],[10,-10],[0,10]]
+2148.1046850000002	EXP	fixation_target_2: closeShape = true
+2148.1046850000002	EXP	fixation_target_2: contrast = 1
+2148.1046850000002	EXP	fixation_target_2: depth = 0
+2148.1046850000002	EXP	fixation_target_2: interpolate = true
+2148.1046850000002	EXP	corrAns_reminder_text_2: units = "height"
+2148.1046850000002	EXP	corrAns_reminder_text_2: ori = 0
+2148.1046850000002	EXP	corrAns_reminder_text_2: opacity = 1
+2148.1046850000002	EXP	corrAns_reminder_text_2: pos = [0,4]
+2148.1046850000002	EXP	corrAns_reminder_text_2: size = undefined
+2148.1046850000002	EXP	corrAns_reminder_text_2: text = "Present: m\n\nAbsent: v"
+2148.1046850000002	EXP	corrAns_reminder_text_2: font = "Arial"
+2148.1046850000002	EXP	corrAns_reminder_text_2: color = {"_hex":"#000000","_rgb":[0,0,0]}
+2148.1046850000002	EXP	corrAns_reminder_text_2: contrast = 1
+2148.1046850000002	EXP	corrAns_reminder_text_2: height = 0.1
+2148.1046850000002	EXP	corrAns_reminder_text_2: bold = false
+2148.1046850000002	EXP	corrAns_reminder_text_2: italic = false
+2148.1046850000002	EXP	corrAns_reminder_text_2: alignHoriz = "left"
+2148.1046850000002	EXP	corrAns_reminder_text_2: alignVert = "center"
+2148.1046850000002	EXP	corrAns_reminder_text_2: wrapWidth = 1
+2148.1046850000002	EXP	corrAns_reminder_text_2: flipHoriz = false
+2148.1046850000002	EXP	corrAns_reminder_text_2: flipVert = false
+2148.1046850000002	EXP	search_txt_2: units = "height"
+2148.1046850000002	EXP	search_txt_2: ori = 0
+2148.1046850000002	EXP	search_txt_2: opacity = 1
+2148.1046850000002	EXP	search_txt_2: pos = [0,0.44]
+2148.1046850000002	EXP	search_txt_2: size = undefined
+2148.1046850000002	EXP	search_txt_2: text = "Search...\n\n"
+2148.1046850000002	EXP	search_txt_2: font = "Arial"
+2148.1046850000002	EXP	search_txt_2: color = {"_hex":"#008000","_rgb":[0,0.5019607843137255,0]}
+2148.1046850000002	EXP	search_txt_2: contrast = 1
+2148.1046850000002	EXP	search_txt_2: height = 0.03
+2148.1046850000002	EXP	search_txt_2: bold = false
+2148.1046850000002	EXP	search_txt_2: italic = false
+2148.1046850000002	EXP	search_txt_2: alignHoriz = "left"
+2148.1046850000002	EXP	search_txt_2: alignVert = "center"
+2148.1046850000002	EXP	search_txt_2: wrapWidth = 1
+2148.1046850000002	EXP	search_txt_2: flipHoriz = false
+2148.1046850000002	EXP	search_txt_2: flipVert = false
+2148.1046850000002	EXP	search_txt: units = "height"
+2148.1046850000002	EXP	search_txt: ori = 0
+2148.1046850000002	EXP	search_txt: opacity = 1
+2148.1046850000002	EXP	search_txt: pos = [0,0.44]
+2148.1046850000002	EXP	search_txt: size = undefined
+2148.1046850000002	EXP	search_txt: text = "Search...\n\n"
+2148.1046850000002	EXP	search_txt: font = "Arial"
+2148.1046850000002	EXP	search_txt: color = {"_hex":"#008000","_rgb":[0,0.5019607843137255,0]}
+2148.1046850000002	EXP	search_txt: contrast = 1
+2148.1046850000002	EXP	search_txt: height = 0.03
+2148.1046850000002	EXP	search_txt: bold = false
+2148.1046850000002	EXP	search_txt: italic = false
+2148.1046850000002	EXP	search_txt: alignHoriz = "left"
+2148.1046850000002	EXP	search_txt: alignVert = "center"
+2148.1046850000002	EXP	search_txt: wrapWidth = 1
+2148.1046850000002	EXP	search_txt: flipHoriz = false
+2148.1046850000002	EXP	search_txt: flipVert = false
+2148.1046850000002	EXP	search_img: units = "height"
+2148.1046850000002	EXP	search_img: ori = 0
+2148.1046850000002	EXP	search_img: opacity = 1
+2148.1046850000002	EXP	search_img: pos = [0,0]
+2148.1046850000002	EXP	search_img: size = [0.8533,0.8533]
+2148.1046850000002	EXP	search_img: image = undefined
+2148.1046850000002	EXP	search_img: mask = undefined
+2148.1046850000002	EXP	search_img: color = {"_rgb":[1,1,1]}
+2148.1046850000002	EXP	search_img: contrast = 1
+2148.1046850000002	EXP	search_img: texRes = 128
+2148.1046850000002	EXP	search_img: interpolate = false
+2148.1046850000002	EXP	search_img: depth = -1
+2148.1046850000002	EXP	search_img: flipHoriz = false
+2148.1046850000002	EXP	search_img: flipVert = false
+2148.1046850000002	EXP	text_2: units = "height"
+2148.1046850000002	EXP	text_2: ori = 0
+2148.1046850000002	EXP	text_2: opacity = 1
+2148.1046850000002	EXP	text_2: pos = [0,0]
+2148.1046850000002	EXP	text_2: size = undefined
+2148.1046850000002	EXP	text_2: text = "Press 'Space Bar' to continue"
+2148.1046850000002	EXP	text_2: font = "Arial"
+2148.1046850000002	EXP	text_2: color = {"_hex":"#000000","_rgb":[0,0,0]}
+2148.1046850000002	EXP	text_2: contrast = 1
+2148.1046850000002	EXP	text_2: height = 0.04
+2148.1046850000002	EXP	text_2: bold = false
+2148.1046850000002	EXP	text_2: italic = false
+2148.1046850000002	EXP	text_2: alignHoriz = "left"
+2148.1046850000002	EXP	text_2: alignVert = "center"
+2148.1046850000002	EXP	text_2: wrapWidth = 1
+2148.1046850000002	EXP	text_2: flipHoriz = false
+2148.1046850000002	EXP	text_2: flipVert = false
+2148.1046850000002	EXP	text: units = "height"
+2148.1046850000002	EXP	text: ori = 0
+2148.1046850000002	EXP	text: opacity = 1
+2148.1046850000002	EXP	text: pos = [0,0]
+2148.1046850000002	EXP	text: size = undefined
+2148.1046850000002	EXP	text: text = "default text"
+2148.1046850000002	EXP	text: font = "Arial"
+2148.1046850000002	EXP	text: color = {"_hex":"#000000","_rgb":[0,0,0]}
+2148.1046850000002	EXP	text: contrast = 1
+2148.1046850000002	EXP	text: height = 0.05
+2148.1046850000002	EXP	text: bold = false
+2148.1046850000002	EXP	text: italic = false
+2148.1046850000002	EXP	text: alignHoriz = "left"
+2148.1046850000002	EXP	text: alignVert = "center"
+2148.1046850000002	EXP	text: wrapWidth = 1
+2148.1046850000002	EXP	text: flipHoriz = false
+2148.1046850000002	EXP	text: flipVert = false
+2148.1046850000002	EXP	consent_question: text = "Welcome to the first part of the study!\n Your participant ID is: 12345\n\n Please write down this number \n Ready to start? Press the Y key when ready"
+2148.1046850000002	EXP	contact_info1: autoDraw = true
+2148.1046850000002	EXP	consent_question: autoDraw = true
+2157.340465	DATA	Keydown: y
+2157.4157750000004	EXP	contact_info1: autoDraw = false
+2157.4157750000004	EXP	consent_question: autoDraw = false
+2157.4157750000004	EXP	consent_1: autoDraw = true
+2157.4157750000004	EXP	text_3: autoDraw = true
+2158.63266	DATA	Mouse: wheel shift=(0,100), pos=(0,0)
+2158.6480850000003	DATA	Mouse: wheel shift=(0,100), pos=(0,0)
+2158.6651100000004	DATA	Mouse: wheel shift=(0,200), pos=(0,0)
+2158.6785900000004	DATA	Mouse: wheel shift=(0,400), pos=(0,0)
+2158.6983550000004	DATA	Mouse: wheel shift=(0,100), pos=(0,0)
+2158.7022250000005	DATA	Mouse: wheel shift=(0,100), pos=(0,0)
+2158.7132650000003	DATA	Mouse: wheel shift=(0,200), pos=(0,0)
+2195.8872650000003	DATA	Keydown: Enter
+2196.4589200000005	DATA	Keydown:  
+2196.5965100000003	EXP	consent_1: autoDraw = false
+2196.5965100000003	EXP	text_3: autoDraw = false
+2196.5965100000003	EXP	consent: autoDraw = true
+2196.5965100000003	EXP	text_4: autoDraw = true
+2200.6253250000004	DATA	Keydown:  
+2200.684145	EXP	consent: autoDraw = false
+2200.684145	EXP	text_4: autoDraw = false
+2200.684145	EXP	consent_2: autoDraw = true
+2200.684145	EXP	text_5: autoDraw = true
+2210.5002050000003	DATA	Keydown: y
+2210.5755150000005	EXP	consent_2: autoDraw = false
+2210.5755150000005	EXP	text_5: autoDraw = false
+2210.5755150000005	EXP	gender_question: autoDraw = true
+2216.2305300000003	DATA	Keydown: m
+2216.2905650000002	EXP	gender_question: autoDraw = false
+2216.2905650000002	EXP	inst_text: autoDraw = true
+2233.124255	DATA	Keydown: s
+2233.41652	EXP	inst_text: autoDraw = false
+2233.41652	EXP	fixation_target: autoDraw = true
+2233.41652	EXP	corrAns_reminder_text: autoDraw = true
+2233.41652	EXP	memory_2: autoDraw = true
+2233.6852500000005	EXP	fixation_target: autoDraw = false
+2233.6852500000005	EXP	corrAns_reminder_text: autoDraw = false
+2233.6852500000005	EXP	memory_2: autoDraw = false
+2233.6852500000005	EXP	target: opacity = 0
+2233.6852500000005	EXP	target: pos = [400,250]
+2233.6852500000005	EXP	target: image = {}
+2233.6852500000005	EXP	dist1: opacity = 1
+2233.6852500000005	EXP	dist1: pos = [-400,-150]
+2233.6852500000005	EXP	dist1: image = {}
+2233.6852500000005	EXP	dist2: opacity = 1
+2233.6852500000005	EXP	dist2: pos = [100,50]
+2233.6852500000005	EXP	dist2: image = {}
+2233.6852500000005	EXP	dist3: opacity = 1
+2233.6852500000005	EXP	dist3: pos = [-100,0]
+2233.6852500000005	EXP	dist3: image = {}
+2233.6852500000005	EXP	dist4: opacity = 1
+2233.6852500000005	EXP	dist4: pos = [-200,200]
+2233.6852500000005	EXP	dist4: image = {}
+2233.6852500000005	EXP	dist5: opacity = 0
+2233.6852500000005	EXP	dist5: pos = [200,-50]
+2233.6852500000005	EXP	dist5: image = {}
+2233.6852500000005	EXP	dist6: opacity = 0
+2233.6852500000005	EXP	dist6: pos = [0,150]
+2233.6852500000005	EXP	dist6: image = {}
+2233.6852500000005	EXP	dist7: opacity = 0
+2233.6852500000005	EXP	dist7: pos = [-300,-200]
+2233.6852500000005	EXP	dist7: image = {}
+2233.6852500000005	EXP	dist8: opacity = 0
+2233.6852500000005	EXP	dist8: pos = [300,-100]
+2233.6852500000005	EXP	dist8: image = {}
+2233.6852500000005	EXP	memory: autoDraw = true
+2233.6852500000005	EXP	target: autoDraw = true
+2233.6852500000005	EXP	dist1: autoDraw = true
+2233.6852500000005	EXP	dist2: autoDraw = true
+2233.6852500000005	EXP	dist3: autoDraw = true
+2233.6852500000005	EXP	dist4: autoDraw = true
+2233.6852500000005	EXP	dist5: autoDraw = true
+2233.6852500000005	EXP	dist6: autoDraw = true
+2233.6852500000005	EXP	dist7: autoDraw = true
+2233.6852500000005	EXP	dist8: autoDraw = true
+2237.6789100000005	EXP	memory: autoDraw = false
+2237.6789100000005	EXP	target: autoDraw = false
+2237.6789100000005	EXP	dist1: autoDraw = false
+2237.6789100000005	EXP	dist2: autoDraw = false
+2237.6789100000005	EXP	dist3: autoDraw = false
+2237.6789100000005	EXP	dist4: autoDraw = false
+2237.6789100000005	EXP	dist5: autoDraw = false
+2237.6789100000005	EXP	dist6: autoDraw = false
+2237.6789100000005	EXP	dist7: autoDraw = false
+2237.6789100000005	EXP	dist8: autoDraw = false
+2237.6789100000005	EXP	memory: autoDraw = false
+2237.6789100000005	EXP	target: autoDraw = false
+2237.6789100000005	EXP	dist1: autoDraw = false
+2237.6789100000005	EXP	dist2: autoDraw = false
+2237.6789100000005	EXP	dist3: autoDraw = false
+2237.6789100000005	EXP	dist4: autoDraw = false
+2237.6789100000005	EXP	dist5: autoDraw = false
+2237.6789100000005	EXP	dist6: autoDraw = false
+2237.6789100000005	EXP	dist7: autoDraw = false
+2237.6789100000005	EXP	dist8: autoDraw = false
+2237.6789100000005	EXP	fixation_target_2: autoDraw = true
+2237.6789100000005	EXP	corrAns_reminder_text_2: autoDraw = true
+2237.6789100000005	EXP	search_txt_2: autoDraw = true
+2238.2541700000006	EXP	fixation_target_2: autoDraw = false
+2238.2541700000006	EXP	corrAns_reminder_text_2: autoDraw = false
+2238.2541700000006	EXP	search_txt_2: autoDraw = false
+2238.2541700000006	EXP	fixation_target_2: autoDraw = false
+2238.2541700000006	EXP	corrAns_reminder_text_2: autoDraw = false
+2238.2541700000006	EXP	search_txt_2: autoDraw = false
+2238.2541700000006	EXP	search_img: opacity = 1
+2238.2541700000006	EXP	search_img: image = {}
+2238.2541700000006	EXP	search_txt: autoDraw = true
+2238.2541700000006	EXP	search_img: autoDraw = true
+2246.15842	EXP	search_txt: autoDraw = false
+2246.15842	EXP	search_img: autoDraw = false
+2246.15842	EXP	search_txt: autoDraw = false
+2246.15842	EXP	search_img: autoDraw = false
+2246.15842	EXP	text_2: autoDraw = true
+2246.15842	EXP	text_2: autoDraw = false
+2246.1889550000005	EXP	text_2: autoDraw = false
+2246.1889550000005	EXP	fixation_target: autoDraw = true
+2246.1889550000005	EXP	corrAns_reminder_text: autoDraw = true
+2246.1889550000005	EXP	memory_2: autoDraw = true
+2246.7055950000004	EXP	fixation_target: autoDraw = false
+2246.7055950000004	EXP	corrAns_reminder_text: autoDraw = false
+2246.7055950000004	EXP	memory_2: autoDraw = false
+2246.7055950000004	EXP	fixation_target: autoDraw = false
+2246.7055950000004	EXP	corrAns_reminder_text: autoDraw = false
+2246.7055950000004	EXP	memory_2: autoDraw = false
+2246.7055950000004	EXP	target: opacity = 1
+2246.7055950000004	EXP	target: pos = [400,-100]
+2246.7055950000004	EXP	target: image = {}
+2246.7055950000004	EXP	dist1: opacity = 1
+2246.7055950000004	EXP	dist1: pos = [-100,-150]
+2246.7055950000004	EXP	dist1: image = {}
+2246.7055950000004	EXP	dist2: opacity = 1
+2246.7055950000004	EXP	dist2: pos = [300,50]
+2246.7055950000004	EXP	dist2: image = {}
+2246.7055950000004	EXP	dist3: opacity = 1
+2246.7055950000004	EXP	dist3: pos = [-300,100]
+2246.7055950000004	EXP	dist3: image = {}
+2246.7055950000004	EXP	dist4: opacity = 0
+2246.7055950000004	EXP	dist4: pos = [0,-50]
+2246.7055950000004	EXP	dist4: image = {}
+2246.7055950000004	EXP	dist5: opacity = 0
+2246.7055950000004	EXP	dist5: pos = [200,150]
+2246.7055950000004	EXP	dist5: image = {}
+2246.7055950000004	EXP	dist6: opacity = 0
+2246.7055950000004	EXP	dist6: pos = [-400,-200]
+2246.7055950000004	EXP	dist6: image = {}
+2246.7055950000004	EXP	dist7: opacity = 0
+2246.7055950000004	EXP	dist7: pos = [-200,200]
+2246.7055950000004	EXP	dist7: image = {}
+2246.7055950000004	EXP	dist8: opacity = 0
+2246.7055950000004	EXP	dist8: pos = [100,0]
+2246.7055950000004	EXP	dist8: image = {}
+2246.7055950000004	EXP	memory: autoDraw = true
+2246.7055950000004	EXP	target: autoDraw = true
+2246.7055950000004	EXP	dist1: autoDraw = true
+2246.7055950000004	EXP	dist2: autoDraw = true
+2246.7055950000004	EXP	dist3: autoDraw = true
+2246.7055950000004	EXP	dist4: autoDraw = true
+2246.7055950000004	EXP	dist5: autoDraw = true
+2246.7055950000004	EXP	dist6: autoDraw = true
+2246.7055950000004	EXP	dist7: autoDraw = true
+2246.7055950000004	EXP	dist8: autoDraw = true
+2250.6827450000005	EXP	memory: autoDraw = false
+2250.6827450000005	EXP	target: autoDraw = false
+2250.6827450000005	EXP	dist1: autoDraw = false
+2250.6827450000005	EXP	dist2: autoDraw = false
+2250.6827450000005	EXP	dist3: autoDraw = false
+2250.6827450000005	EXP	dist4: autoDraw = false
+2250.6827450000005	EXP	dist5: autoDraw = false
+2250.6827450000005	EXP	dist6: autoDraw = false
+2250.6827450000005	EXP	dist7: autoDraw = false
+2250.6827450000005	EXP	dist8: autoDraw = false
+2250.6827450000005	EXP	memory: autoDraw = false
+2250.6827450000005	EXP	target: autoDraw = false
+2250.6827450000005	EXP	dist1: autoDraw = false
+2250.6827450000005	EXP	dist2: autoDraw = false
+2250.6827450000005	EXP	dist3: autoDraw = false
+2250.6827450000005	EXP	dist4: autoDraw = false
+2250.6827450000005	EXP	dist5: autoDraw = false
+2250.6827450000005	EXP	dist6: autoDraw = false
+2250.6827450000005	EXP	dist7: autoDraw = false
+2250.6827450000005	EXP	dist8: autoDraw = false
+2250.6827450000005	EXP	fixation_target_2: autoDraw = true
+2250.6827450000005	EXP	corrAns_reminder_text_2: autoDraw = true
+2250.6827450000005	EXP	search_txt_2: autoDraw = true
+2251.2631100000003	EXP	fixation_target_2: autoDraw = false
+2251.2631100000003	EXP	corrAns_reminder_text_2: autoDraw = false
+2251.2631100000003	EXP	search_txt_2: autoDraw = false
+2251.2631100000003	EXP	fixation_target_2: autoDraw = false
+2251.2631100000003	EXP	corrAns_reminder_text_2: autoDraw = false
+2251.2631100000003	EXP	search_txt_2: autoDraw = false
+2251.2631100000003	EXP	search_img: opacity = 1
+2251.2631100000003	EXP	search_img: image = {}
+2251.2631100000003	EXP	search_txt: autoDraw = true
+2251.2631100000003	EXP	search_img: autoDraw = true
+2253.8583900000003	DATA	Keydown: p
+2253.8683600000004	EXP	search_txt: autoDraw = false
+2253.8683600000004	EXP	search_img: autoDraw = false
+2253.8683600000004	EXP	text_2: autoDraw = true
+2255.7216850000004	DATA	Keydown:  
+2255.7321450000004	EXP	text_2: autoDraw = false
+2255.7321450000004	EXP	fixation_target: autoDraw = true
+2255.7321450000004	EXP	corrAns_reminder_text: autoDraw = true
+2255.7321450000004	EXP	memory_2: autoDraw = true
+2256.2691150000005	EXP	fixation_target: autoDraw = false
+2256.2691150000005	EXP	corrAns_reminder_text: autoDraw = false
+2256.2691150000005	EXP	memory_2: autoDraw = false
+2256.2691150000005	EXP	fixation_target: autoDraw = false
+2256.2691150000005	EXP	corrAns_reminder_text: autoDraw = false
+2256.2691150000005	EXP	memory_2: autoDraw = false
+2256.2691150000005	EXP	target: opacity = 1
+2256.2691150000005	EXP	target: pos = [200,-200]
+2256.2691150000005	EXP	target: image = {}
+2256.2691150000005	EXP	dist1: opacity = 1
+2256.2691150000005	EXP	dist1: pos = [-100,-150]
+2256.2691150000005	EXP	dist1: image = {}
+2256.2691150000005	EXP	dist2: opacity = 1
+2256.2691150000005	EXP	dist2: pos = [-300,150]
+2256.2691150000005	EXP	dist2: image = {}
+2256.2691150000005	EXP	dist3: opacity = 1
+2256.2691150000005	EXP	dist3: pos = [0,0]
+2256.2691150000005	EXP	dist3: image = {}
+2256.2691150000005	EXP	dist4: opacity = 0
+2256.2691150000005	EXP	dist4: pos = [-400,-100]
+2256.2691150000005	EXP	dist4: image = {}
+2256.2691150000005	EXP	dist5: opacity = 0
+2256.2691150000005	EXP	dist5: pos = [100,200]
+2256.2691150000005	EXP	dist5: image = {}
+2256.2691150000005	EXP	dist6: opacity = 0
+2256.2691150000005	EXP	dist6: pos = [-200,50]
+2256.2691150000005	EXP	dist6: image = {}
+2256.2691150000005	EXP	dist7: opacity = 0
+2256.2691150000005	EXP	dist7: pos = [400,-50]
+2256.2691150000005	EXP	dist7: image = {}
+2256.2691150000005	EXP	dist8: opacity = 0
+2256.2691150000005	EXP	dist8: pos = [300,250]
+2256.2691150000005	EXP	dist8: image = {}
+2256.2691150000005	EXP	memory: autoDraw = true
+2256.2691150000005	EXP	target: autoDraw = true
+2256.2691150000005	EXP	dist1: autoDraw = true
+2256.2691150000005	EXP	dist2: autoDraw = true
+2256.2691150000005	EXP	dist3: autoDraw = true
+2256.2691150000005	EXP	dist4: autoDraw = true
+2256.2691150000005	EXP	dist5: autoDraw = true
+2256.2691150000005	EXP	dist6: autoDraw = true
+2256.2691150000005	EXP	dist7: autoDraw = true
+2256.2691150000005	EXP	dist8: autoDraw = true
+2256.853985	DATA	Keydown: Escape

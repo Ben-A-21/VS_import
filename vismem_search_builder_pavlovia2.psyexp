@@ -1,0 +1,1148 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2020.1.2">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '00000', 'age': '99'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1920, 1200]" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[1,1,1]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="vismem_search_builder_code" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <CodeComponent name="shuffle_mempos">
+        <Param name="Begin Experiment" updates="constant" val="# define possible coordinates for memorization screen&amp;#10;x_pos = [-400, -300, -200, -100, 0, 100, 200, 300, 400]&amp;#10;y_pos = [-200, -150, -100, -50, 0, 50, 100, 150, 200, 250]&amp;#10;#opacVal = 0&amp;#10;opacVal = [1, 1, 1, 1, 1, 1, 1, 1, 1]&amp;#10;&amp;#10;#generate random ID in Python&amp;#10;#random_ID = randint(0, 10000)&amp;#10;#add generated ID to the data &amp;#10;#thisExp.addData('random_ID', random_ID)&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="x_pos = [(- 400), (- 300), (- 200), (- 100), 0, 100, 200, 300, 400];&amp;#10;y_pos = [(- 200), (- 150), (- 100), (- 50), 0, 50, 100, 150, 200, 250];&amp;#10;opacVal = [1, 1, 1, 1, 1, 1, 1, 1, 1];&amp;#10;&amp;#10;// random_ID = (Math.floor((Math.random() * ((10000 - 0) + 1))) + 0);&amp;#10;// psychoJS.experiment.addData('random_ID', random_ID);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="shuffle = function (a) {&amp;#10;    var j, x, i;&amp;#10;    for (i = a.length - 1; i &gt; 0; i--) {&amp;#10;        j = Math.floor(Math.random() * (i + 1));&amp;#10;        x = a[i];&amp;#10;        a[i] = a[j];&amp;#10;        a[j] = x;&amp;#10;    }&amp;#10;    return a;&amp;#10;}&amp;#10;&amp;#10;shuffle(x_pos);&amp;#10;shuffle(y_pos);&amp;#10;if ((TARGET_NAME !== &quot;blank.png&quot;)) {&amp;#10;    opacVal[0] = 1;&amp;#10;} else {&amp;#10;    opacVal[0] = 0;&amp;#10;}&amp;#10;if ((D1 !== &quot;blank.png&quot;)) {&amp;#10;    opacVal[1] = 1;&amp;#10;} else {&amp;#10;    opacVal[1] = 0;&amp;#10;}&amp;#10;if ((D2 !== &quot;blank.png&quot;)) {&amp;#10;    opacVal[2] = 1;&amp;#10;} else {&amp;#10;    opacVal[2] = 0;&amp;#10;}&amp;#10;if ((D3 !== &quot;blank.png&quot;)) {&amp;#10;    opacVal[3] = 1;&amp;#10;} else {&amp;#10;    opacVal[3] = 0;&amp;#10;}&amp;#10;if ((D4 !== &quot;blank.png&quot;)) {&amp;#10;    opacVal[4] = 1;&amp;#10;} else {&amp;#10;    opacVal[4] = 0;&amp;#10;}&amp;#10;if ((D5 !== &quot;blank.png&quot;)) {&amp;#10;    opacVal[5] = 1;&amp;#10;} else {&amp;#10;    opacVal[5] = 0;&amp;#10;}&amp;#10;if ((D6 !== &quot;blank.png&quot;)) {&amp;#10;    opacVal[6] = 1;&amp;#10;} else {&amp;#10;    opacVal[6] = 0;&amp;#10;}&amp;#10;if ((D7 !== &quot;blank.png&quot;)) {&amp;#10;    opacVal[7] = 1;&amp;#10;} else {&amp;#10;    opacVal[7] = 0;&amp;#10;}&amp;#10;if ((D8 !== &quot;blank.png&quot;)) {&amp;#10;    opacVal[8] = 1;&amp;#10;} else {&amp;#10;    opacVal[8] = 0;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="# randomize stimulus positions at the start of each trial&amp;#10;shuffle(x_pos)&amp;#10;shuffle(y_pos)&amp;#10;&amp;#10;# When target is absent, set opacity to 0&amp;#10;#if Tpres != None and Tpres == 0.0 :&amp;#10;#    opacVal[4] = 0&amp;#10;#elif  Tpres == 1.0 :&amp;#10;#    opacVal[4] = 1&amp;#10;&amp;#10;# When distractor is absent, set opacity to 1&amp;#10;if TARGET_NAME != 'blank.png':&amp;#10;    opacVal[0] = 1&amp;#10;else:&amp;#10;    opacVal[0] = 0&amp;#10;if D1 != 'blank.png':&amp;#10;    opacVal[1] = 1&amp;#10;else:&amp;#10;    opacVal[1] = 0&amp;#10;if D2 != 'blank.png':&amp;#10;    opacVal[2] = 1&amp;#10;else:&amp;#10;    opacVal[2] = 0&amp;#10;if D3 != 'blank.png':&amp;#10;    opacVal[3] = 1&amp;#10;else:&amp;#10;    opacVal[3] = 0&amp;#10;if D4 != 'blank.png':&amp;#10;    opacVal[4] = 1&amp;#10;else:&amp;#10;    opacVal[4] = 0&amp;#10;if D5 != 'blank.png':&amp;#10;    opacVal[5] = 1&amp;#10;else:&amp;#10;    opacVal[5] = 0&amp;#10;if D6 != 'blank.png':&amp;#10;    opacVal[6] = 1&amp;#10;else:&amp;#10;    opacVal[6] = 0&amp;#10;if D7 != 'blank.png':&amp;#10;    opacVal[7] = 1&amp;#10;else:&amp;#10;    opacVal[7] = 0&amp;#10;if D8 != 'blank.png':&amp;#10;    opacVal[8] = 1&amp;#10;else:&amp;#10;    opacVal[8] = 0&amp;#10;&amp;#10;# target.setOpacity(Tpres, log=False)&amp;#10;# print(frameDur)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Both" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="shuffle_mempos" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="memory">
+        <Param name="color" updates="constant" val="red" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="memory" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.44)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$stDur_Mem" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Memorise...&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <ImageComponent name="target">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$TARGET_MEM" valType="str"/>
+        <Param name="interpolate" updates="constant" val="nearest" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="target" valType="code"/>
+        <Param name="opacity" updates="set every repeat" val="opacVal[0]" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(x_pos[0], y_pos[0])" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$stDur_Mem" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="dist1">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$D1" valType="str"/>
+        <Param name="interpolate" updates="constant" val="nearest" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="dist1" valType="code"/>
+        <Param name="opacity" updates="set every repeat" val="opacVal[1]" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(x_pos[1], y_pos[1])" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$stDur_Mem" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="dist2">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$D2" valType="str"/>
+        <Param name="interpolate" updates="constant" val="nearest" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="dist2" valType="code"/>
+        <Param name="opacity" updates="set every repeat" val="opacVal[2]" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(x_pos[2], y_pos[2])" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$stDur_Mem" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="dist3">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$D3" valType="str"/>
+        <Param name="interpolate" updates="constant" val="nearest" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="dist3" valType="code"/>
+        <Param name="opacity" updates="set every repeat" val="opacVal[3]" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(x_pos[3], y_pos[3])" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$stDur_Mem" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="dist4">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$D4" valType="str"/>
+        <Param name="interpolate" updates="constant" val="nearest" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="dist4" valType="code"/>
+        <Param name="opacity" updates="set every repeat" val="opacVal[4]" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(x_pos[4], y_pos[4])" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$stDur_Mem" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="dist5">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$D5" valType="str"/>
+        <Param name="interpolate" updates="constant" val="nearest" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="dist5" valType="code"/>
+        <Param name="opacity" updates="set every repeat" val="opacVal[5]" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(x_pos[5], y_pos[5])" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$stDur_Mem" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="dist6">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$D6" valType="str"/>
+        <Param name="interpolate" updates="constant" val="nearest" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="dist6" valType="code"/>
+        <Param name="opacity" updates="set every repeat" val="opacVal[6]" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(x_pos[6], y_pos[6])" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$stDur_Mem" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="dist7">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$D7" valType="str"/>
+        <Param name="interpolate" updates="constant" val="nearest" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="dist7" valType="code"/>
+        <Param name="opacity" updates="set every repeat" val="opacVal[7]" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(x_pos[7], y_pos[7])" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$stDur_Mem" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </ImageComponent>
+      <ImageComponent name="dist8">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$D8" valType="str"/>
+        <Param name="interpolate" updates="constant" val="nearest" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="dist8" valType="code"/>
+        <Param name="opacity" updates="set every repeat" val="opacVal[8]" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(x_pos[8], y_pos[8])" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$stDur_Mem" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="Instruct">
+      <TextComponent name="inst_text">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="inst_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="The next screen shown will require you to memorize the targets.&amp;#10;&amp;#10;This will be followed by a 'Search' screen, &amp;#10;in which you will use the keys below to indicate if a target is present or absent. &amp;#10;At most one of the targets will be present in the search screen.&amp;#10;&amp;#10;'M' -&gt;present&amp;#10;'V'  &lt;-absent &amp;#10;&amp;#10;Ready? Press 'S' &amp;#10;to start &amp;#10;&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="proceed_key">
+        <Param name="allowedKeys" updates="constant" val="'s'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="proceed_key" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="fixation">
+      <PolygonComponent name="fixation_target">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[1,0,0]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[-1,-1,-1]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="99" valType="int"/>
+        <Param name="name" updates="None" val="fixation_target" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(20, 20)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </PolygonComponent>
+      <TextComponent name="corrAns_reminder_text">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="corrAns_reminder_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Present: m&amp;#10;&amp;#10;Absent: v" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="memory_2">
+        <Param name="color" updates="constant" val="red" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="memory_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.44)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Memorise...&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="search">
+      <TextComponent name="search_txt">
+        <Param name="color" updates="constant" val="green" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="search_txt" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.44)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="8" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Search...&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <ImageComponent name="search_img">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$FILE_SEARCH_IMAGE" valType="str"/>
+        <Param name="interpolate" updates="constant" val="nearest" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="search_img" valType="code"/>
+        <Param name="opacity" updates="set every repeat" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="0.8533" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="8" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="height" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="'m','v','p'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="8" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="thanks">
+      <CodeComponent name="code">
+        <Param name="Begin Experiment" updates="constant" val="Perfo = 0&amp;#10;msg='doh!'#if this comes up we forgot to update the msg!&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="Perfo = 0;&amp;#10;msg = &quot;doh!&quot;;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="// Get all correct&amp;#10;nCorr = 0;&amp;#10;var eachResp;&amp;#10;for (eachResp=0; eachResp&lt;psychoJS.experiment._trialsData.length; eachResp++) &amp;#10;{&amp;#10;  nCorr += psychoJS.experiment._trialsData[eachResp]['key_resp.corr'];&amp;#10;}&amp;#10;Perfo = 100 * nCorr / psychoJS.experiment._trialsData.length;&amp;#10; &amp;#10;// msg = &quot;Thanks for participating. Your performance was&quot; + Perfo + &quot;   out of 100. Well done!&quot;;&amp;#10;&amp;#10;// msg = &quot;ID&quot; + random_ID + &quot;important!&quot;;&amp;#10;msg = &quot;Thanks for participating.\&amp;#10;Your performance was &quot; + Perfo + &quot;  out of 100. Well done! \n\n \&amp;#10;PLEASE WRITE DOWN YOUR UNIQUE PARTICIPANT ID &quot; + newID + &quot;\n\n \&amp;#10;You will need it to run the second part of the experiment. \n\n \&amp;#10;To enter the draw to win an Amazon eVoucher of £20, please send an email to lpzmi@nottingham.ac.uk with subject 'draw' and in the email cut and paste the following phrase \n\&amp;#10;'I participated in the study on EFVS77'\n\n \&amp;#10;Press x to finish the experiment&quot;;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="nCorr = trials.data['key_resp.corr'].sum() #.std(), .mean() also available&amp;#10;Perfo = 100*trials.data['key_resp.corr'].mean()&amp;#10;#meanRt = trials.data['key_resp.rt'].mean()&amp;#10;#msg = &quot;Thanks for participating. Your performance was %.2f out of 100. Well done!!&quot; %(Perfo)&amp;#10;msg = 'Thanks for participating. Your performance was %.2f out of 100. \&amp;#10;Well done!! \n \&amp;#10;PLEASE WRITE DOWN YOUR UNIQUE PARTICIPANT ID %i \n \&amp;#10;You will need it to run the second part of the experiment \n \&amp;#10;Press x to finish the experiment' % (Perfo, newID)&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Both" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$msg" valType="str"/>
+        <Param name="units" updates="None" val="height" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_end">
+        <Param name="allowedKeys" updates="constant" val="'x'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_end" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="break_2">
+      <CodeComponent name="code_break">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if ((key_resp.keys === &quot;p&quot;)) {&amp;#10;    break_duration = 60;&amp;#10;} else {&amp;#10;    break_duration = 0;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if key_resp.keys == 'p':&amp;#10;    break_duration = 60&amp;#10;else:&amp;#10;    break_duration = 0&amp;#10;    &amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_break" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="text_2">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="text_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$break_duration" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Press 'Space Bar' to continue" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="allowedKeys" updates="set every repeat" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$break_duration" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="blockend_msg">
+      <CodeComponent name="block_everyNtrials_2">
+        <Param name="Begin Experiment" updates="constant" val="ListBreaks = [2, 59, 89]&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="ListBreaks = [3, 59, 89];&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;&amp;#10;    " valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="if not trials.thisN in ListBreaks:&amp;#10;#if trials.thisN % 3 != 0: &amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="currtrial = loop.getCurrentTrial();&amp;#10;if (currtrial % 3 &gt; 0 &amp;&amp; currtrial &gt; 1){&amp;#10;    continueRoutine = false;&amp;#10;    console.log('no break here')&amp;#10;} " valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="block_everyNtrials_2" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="emap_screen_2">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="emap_screen_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="End of block&amp;#10;&amp;#10;Ready? Press Space Bar to continue&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_5">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_5" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="fixation_search">
+      <PolygonComponent name="fixation_target_2">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[0,1,0]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[-1,-1,-1]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="99" valType="int"/>
+        <Param name="name" updates="None" val="fixation_target_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="triangle" valType="str"/>
+        <Param name="size" updates="constant" val="(20, 20)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </PolygonComponent>
+      <TextComponent name="corrAns_reminder_text_2">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="corrAns_reminder_text_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Present: m&amp;#10;&amp;#10;Absent: v" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="search_txt_2">
+        <Param name="color" updates="constant" val="green" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="search_txt_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.44)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Search...&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="consent1">
+      <ImageComponent name="consent_1">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="Slide1.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="consent_1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="[1, 0.8533]" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="height" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="text_3">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.49)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="After reading, press Space to continue&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="height" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="consent1_2">
+      <ImageComponent name="consent">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="Slide2.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="consent" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="[1, 0.8533]" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="height" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp_4">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_4" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="text_4">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="text_4" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.49)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="After reading, press Space to continue&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="height" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="consent1_3">
+      <ImageComponent name="consent_2">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="Slide3.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="consent_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="[1, 0.8533]" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="height" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp_6">
+        <Param name="allowedKeys" updates="constant" val="'y'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_6" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="text_5">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="text_5" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.49)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="I consent (Y) I do not consent (Esc)&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="height" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="setup">
+      <CodeComponent name="code_JS">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="thisExp=psychoJS.experiment;&amp;#10;win=psychoJS.window;&amp;#10;event=psychoJS.eventManager;&amp;#10;Array.prototype.append = [].push;&amp;#10;shuffle = util.shuffle;&amp;#10;round = function(num, n=0) {    &amp;#10;    return +(Math.round(num + (&quot;e+&quot; + n))  + (&quot;e-&quot; + n));&amp;#10;}&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_JS" valType="code"/>
+      </CodeComponent>
+      <CodeComponent name="code_random">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="!function(a,b,c,d,e,f,g,h,i){function j(a){var b,c=a.length,e=this,f=0,g=e.i=e.j=0,h=e.S=[];for(c||(a=[c++]);d&gt;f;)h[f]=f++;for(f=0;d&gt;f;f++)h[f]=h[g=s&amp;g+a[f%c]+(b=h[f])],h[g]=b;(e.g=function(a){for(var b,c=0,f=e.i,g=e.j,h=e.S;a--;)b=h[f=s&amp;f+1],c=c*d+h[s&amp;(h[f]=h[g=s&amp;g+b])+(h[g]=b)];return e.i=f,e.j=g,c})(d)}function k(a,b){var c,d=[],e=typeof a;if(b&amp;&amp;&quot;object&quot;==e)for(c in a)try{d.push(k(a[c],b-1))}catch(f){}return d.length?d:&quot;string&quot;==e?a:a+&quot;\0&quot;}function l(a,b){for(var c,d=a+&quot;&quot;,e=0;e&lt;d.length;)b[s&amp;e]=s&amp;(c^=19*b[s&amp;e])+d.charCodeAt(e++);return n(b)}function m(c){try{return o?n(o.randomBytes(d)):(a.crypto.getRandomValues(c=new Uint8Array(d)),n(c))}catch(e){return[+new Date,a,(c=a.navigator)&amp;&amp;c.plugins,a.screen,n(b)]}}function n(a){return String.fromCharCode.apply(0,a)}var o,p=c.pow(d,e),q=c.pow(2,f),r=2*q,s=d-1,t=c[&quot;seed&quot;+i]=function(a,f,g){var h=[];f=1==f?{entropy:!0}:f||{};var o=l(k(f.entropy?[a,n(b)]:null==a?m():a,3),h),s=new j(h);return l(n(s.S),b),(f.pass||g||function(a,b,d){return d?(c[i]=a,b):a})(function(){for(var a=s.g(e),b=p,c=0;q&gt;a;)a=(a+c)*d,b*=d,c=s.g(1);for(;a&gt;=r;)a/=2,b/=2,c&gt;&gt;&gt;=1;return(a+c)/b},o,&quot;global&quot;in f?f.global:this==c)};if(l(c[i](),b),g&amp;&amp;g.exports){g.exports=t;try{o=require(&quot;crypto&quot;)}catch(u){}}else h&amp;&amp;h.amd&amp;&amp;h(function(){return t})}(this,[],Math,256,6,52,&quot;object&quot;==typeof module&amp;&amp;module,&quot;function&quot;==typeof define&amp;&amp;define,&quot;random&quot;);" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_random" valType="code"/>
+      </CodeComponent>
+      <CodeComponent name="code_both">
+        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;seedString = core.Clock()&amp;#10;random.seed(seedString)&amp;#10;randomnum1=random.random()&amp;#10;random.seed(seedString)&amp;#10;randomnum2=random.random()&amp;#10;&amp;#10;kb = keyboard.Keyboard()&amp;#10;&amp;#10;#generate random ID in Python&amp;#10;random_ID = randint(0, 10000)&amp;#10;#add generated ID to the data &amp;#10;thisExp.addData('random_ID', random_ID)&amp;#10;newID=random_ID" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="seedString = Math.seedrandom();&amp;#10;randomnum1 = Math.random(); &amp;#10;Math.seedrandom(seedString);&amp;#10;randomnum2 = Math.random(); &amp;#10;kb = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true}); &amp;#10;&amp;#10;random_ID = (Math.floor((Math.random() * ((10000 - 0) + 1))) + 0);&amp;#10;psychoJS.experiment.addData('random_ID', random_ID);&amp;#10;&amp;#10;if (expInfo['participant'] === '00000'){&amp;#10;    newID = random_ID;&amp;#10;} else {&amp;#10;    newID = expInfo['participant']&amp;#10;}&amp;#10;console.log(newID);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Both" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_both" valType="code"/>
+      </CodeComponent>
+      <CodeComponent name="code_auto">
+        <Param name="Begin Experiment" updates="constant" val="items = []" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="items = [];&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="kb.clock.reset();&amp;#10;msg0 = ((&quot;Welcome to the first part of the study!\n Your participant ID is: &quot; + newID.toString()) + &quot;\n\n Please write down this number \n Ready to start? Press the Y key when ready&quot;);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="kb.clock.reset()  # when you want to start the timer from&amp;#10;msg0=&quot;Welcome to the first part of the study!\n Your participant ID is: &quot;+str(newID) + &quot;\n\n Please write down this number \n Ready to start? Press the Y key when ready&quot;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="&amp;#10;    &amp;#10;" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="/* Syntax Error: Fix Python code */" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_auto" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="contact_info1">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="contact_info1.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="contact_info1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.2)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="[0.9, 0.1]" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="height" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp_ini">
+        <Param name="allowedKeys" updates="constant" val="'y'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_ini" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="consent_question">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="consent_question" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$msg0" valType="str"/>
+        <Param name="units" updates="None" val="norm" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="gender_q">
+      <TextComponent name="gender_question">
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="gender_question" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="In order to allow us to describe our sample, we would now like you to answer some demographic questions.&amp;#10;&amp;#10;What is your gender?&amp;#10;&amp;#10;Woman (W)&amp;#10;Man(M)&amp;#10;Non-binary (N)&amp;#10;Different identity (D)&amp;#10;Prefer not to say (P)" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="Gender">
+        <Param name="allowedKeys" updates="constant" val="'w','m','n','d','p'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Gender" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="setup"/>
+    <Routine name="consent1"/>
+    <Routine name="consent1_2"/>
+    <Routine name="consent1_3"/>
+    <Routine name="gender_q"/>
+    <Routine name="Instruct"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_044_toys_003'), ('FILE_SEARCH_IMAGE', 'S1_shelves_044_toys_003.jpg'), ('TARGET', 1), ('TARGET_NAME', 'motorcycle341.png'), ('TARGET_MEM', 'motorcycle341.png'), ('D1', 'truck96.png'), ('D2', 'truck83.png'), ('D3', 'airplane19.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_028_person_014'), ('FILE_SEARCH_IMAGE', 'S1_building_028_person_014.jpg'), ('TARGET', 1), ('TARGET_NAME', 'person1293.png'), ('TARGET_MEM', 'person1293.png'), ('D1', 'person1501.png'), ('D2', 'person1447.png'), ('D3', 'person1485.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_018_cat_005'), ('FILE_SEARCH_IMAGE', 'S1_building_018_cat_005.jpg'), ('TARGET', 1), ('TARGET_NAME', 'cat1440.png'), ('TARGET_MEM', 'cat1440.png'), ('D1', 'cat1534.png'), ('D2', 'cat1396.png'), ('D3', 'cat1452.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_044_dog_012'), ('FILE_SEARCH_IMAGE', 'S1_building_044_dog_012.jpg'), ('TARGET', 1), ('TARGET_NAME', 'dog1544.png'), ('TARGET_MEM', 'dog1544.png'), ('D1', 'dog1543.png'), ('D2', 'dog1592.png'), ('D3', 'dog1560.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_050_bird_006'), ('FILE_SEARCH_IMAGE', 'S1_building_050_bird_006.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bird709.png'), ('TARGET_MEM', 'bird709.png'), ('D1', 'bird680.png'), ('D2', 'bird1112.png'), ('D3', 'bird455.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_033_cat_012'), ('FILE_SEARCH_IMAGE', 'S1_building_033_cat_012.jpg'), ('TARGET', 1), ('TARGET_NAME', 'cat1997.png'), ('TARGET_MEM', 'cat1997.png'), ('D1', 'cat1953.png'), ('D2', 'cat1921.png'), ('D3', 'cat1927.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_043_dog_011'), ('FILE_SEARCH_IMAGE', 'S1_building_043_dog_011.jpg'), ('TARGET', 1), ('TARGET_NAME', 'dog1389.png'), ('TARGET_MEM', 'dog1389.png'), ('D1', 'dog1385.png'), ('D2', 'dog1267.png'), ('D3', 'dog1402.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_028_book_001'), ('FILE_SEARCH_IMAGE', 'S1_shelves_028_book_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'book624.png'), ('TARGET_MEM', 'book624.png'), ('D1', 'book349.png'), ('D2', 'book368.png'), ('D3', 'book392.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_026_vase_002'), ('FILE_SEARCH_IMAGE', 'S1_shelves_026_vase_002.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'vase179.png'), ('D2', 'vase975.png'), ('D3', 'vase1032.png'), ('D4', 'vase556.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_026_person_012'), ('FILE_SEARCH_IMAGE', 'S1_building_026_person_012.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'person150.png'), ('D2', 'person390.png'), ('D3', 'person137.png'), ('D4', 'person140.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_020_cat_007'), ('FILE_SEARCH_IMAGE', 'S1_building_020_cat_007.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'cat1553.png'), ('D2', 'cat1557.png'), ('D3', 'cat1569.png'), ('D4', 'cat1630.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_015_bottle_004'), ('FILE_SEARCH_IMAGE', 'S1_shelves_015_bottle_004.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'bottle1332.png'), ('D2', 'bottle1090.png'), ('D3', 'bottle1390.png'), ('D4', 'bottle1498.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_022_sheep_010'), ('FILE_SEARCH_IMAGE', 'S1_mountain_022_sheep_010.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'sheep920.png'), ('D2', 'sheep1036.png'), ('D3', 'sheep1087.png'), ('D4', 'sheep909.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_046_toys_005'), ('FILE_SEARCH_IMAGE', 'S1_shelves_046_toys_005.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'bus321.png'), ('D2', 'airplane351.png'), ('D3', 'airplane381.png'), ('D4', 'bus323.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_035_book_008'), ('FILE_SEARCH_IMAGE', 'S1_shelves_035_book_008.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'book271.png'), ('D2', 'book113.png'), ('D3', 'book484.png'), ('D4', 'book429.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_019_sheep_007'), ('FILE_SEARCH_IMAGE', 'S1_mountain_019_sheep_007.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'sheep46.png'), ('D2', 'sheep53.png'), ('D3', 'sheep128.png'), ('D4', 'sheep20.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 1), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_002_cat_001'), ('FILE_SEARCH_IMAGE', 'S2_building_002_cat_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'stm_building_002_cat_001_012.png'), ('TARGET_MEM', 'stm_building_002_cat_001_012.png'), ('D1', 'stm_building_002_cat_001_005.png'), ('D2', 'stm_building_002_cat_001_007.png'), ('D3', 'stm_building_002_cat_001_003.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_jungle_003_bird_003'), ('FILE_SEARCH_IMAGE', 'S2_jungle_003_bird_003.jpg'), ('TARGET', 1), ('TARGET_NAME', 'stm_jugle_003_birds_003_001.png'), ('TARGET_MEM', 'stm_jugle_003_birds_003_001.png'), ('D1', 'stm_jugle_003_birds_003_009.png'), ('D2', 'stm_jugle_003_birds_003_011.png'), ('D3', 'stm_jugle_003_birds_003_013.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_052_bird_008'), ('FILE_SEARCH_IMAGE', 'S2_building_052_bird_008.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bird936.png'), ('TARGET_MEM', 'bird936.png'), ('D1', 'bird927.png'), ('D2', 'bird935.png'), ('D3', 'bird938.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_004_sheep_001'), ('FILE_SEARCH_IMAGE', 'S2_building_004_sheep_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'stm_building_004_sheep_001_009.png'), ('TARGET_MEM', 'stm_building_004_sheep_001_009.png'), ('D1', 'stm_building_004_sheep_001_014.png'), ('D2', 'stm_building_004_sheep_001_015.png'), ('D3', 'stm_building_004_sheep_001_010.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_jungle_004_bird_004'), ('FILE_SEARCH_IMAGE', 'S2_jungle_004_bird_004.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'bird224.png'), ('D2', 'bird133.png'), ('D3', 'bird244.png'), ('D4', 'bird131.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_001_bear_001'), ('FILE_SEARCH_IMAGE', 'S2_mountain_001_bear_001.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'stm_mountain_001_bear_001_003.png'), ('D2', 'stm_mountain_001_bear_001_013.png'), ('D3', 'stm_mountain_001_bear_001_010.png'), ('D4', 'stm_mountain_001_bear_001_005.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_002_fruits_001'), ('FILE_SEARCH_IMAGE', 'S2_shelves_002_fruits_001.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'stm_shelves_001_fruits_001_012.png'), ('D2', 'stm_shelves_001_fruits_001_010.png'), ('D3', 'stm_shelves_001_fruits_001_009.png'), ('D4', 'stm_shelves_001_fruits_001_013.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_009_horse _001'), ('FILE_SEARCH_IMAGE', 'S2_mountain_009_horse _001.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'horse1643.png'), ('D2', 'horse1105.png'), ('D3', 'horse1725.png'), ('D4', 'horse1447.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_006_bear_002'), ('FILE_SEARCH_IMAGE', 'S2_mountain_006_bear_002.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bear688.png'), ('TARGET_MEM', 'bear688.png'), ('D1', 'bear4.png'), ('D2', 'bear71.png'), ('D3', 'bear72.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_004_sheep_001'), ('FILE_SEARCH_IMAGE', 'S2_mountain_004_sheep_001.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'sheep662.png'), ('D2', 'sheep796.png'), ('D3', 'sheep858.png'), ('D4', 'sheep875.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_011_bear_003'), ('FILE_SEARCH_IMAGE', 'S2_mountain_011_bear_003.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bear46.png'), ('TARGET_MEM', 'bear46.png'), ('D1', 'bear145.png'), ('D2', 'bear70.png'), ('D3', 'bear215.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_008_fruitvegetal_001'), ('FILE_SEARCH_IMAGE', 'S2_shelves_008_fruitvegetal_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'carrot46.png'), ('TARGET_MEM', 'carrot46.png'), ('D1', 'broccoli85.png'), ('D2', 'apple473.png'), ('D3', 'orange138.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_field_002_farmanimals_002'), ('FILE_SEARCH_IMAGE', 'S2_field_002_farmanimals_002.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'cow120.png'), ('D2', 'cow65.png'), ('D3', 'horse126.png'), ('D4', 'cow325.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_005_farmanimals_001'), ('FILE_SEARCH_IMAGE', 'S2_mountain_005_farmanimals_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'sheep564.png'), ('TARGET_MEM', 'sheep564.png'), ('D1', 'cow367.png'), ('D2', 'horse126.png'), ('D3', 'cow325.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_010_sheep_002'), ('FILE_SEARCH_IMAGE', 'S2_mountain_010_sheep_002.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'sheep1280.png'), ('D2', 'sheep1344.png'), ('D3', 'sheep1652.png'), ('D4', 'sheep1275.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_024_cow_004'), ('FILE_SEARCH_IMAGE', 'S2_mountain_024_cow_004.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'cow289.png'), ('D2', 'cow337.png'), ('D3', 'cow306.png'), ('D4', 'cow452.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 2), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_032_book_005'), ('FILE_SEARCH_IMAGE', 'S4_shelves_032_book_005.jpg'), ('TARGET', 1), ('TARGET_NAME', 'book466.png'), ('TARGET_MEM', 'book466.png'), ('D1', 'book22.png'), ('D2', 'book23.png'), ('D3', 'book513.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_039_book_012'), ('FILE_SEARCH_IMAGE', 'S4_shelves_039_book_012.jpg'), ('TARGET', 1), ('TARGET_NAME', 'book1310.png'), ('TARGET_MEM', 'book1310.png'), ('D1', 'book1064.png'), ('D2', 'book1213.png'), ('D3', 'book172.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_001_dog_001'), ('FILE_SEARCH_IMAGE', 'S4_building_001_dog_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'stm_builging_001_dog_001_010.png'), ('TARGET_MEM', 'stm_builging_001_dog_001_010.png'), ('D1', 'stm_builging_001_dog_001_006.png'), ('D2', 'stm_builging_001_dog_001_012.png'), ('D3', 'stm_builging_001_dog_001_015.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_021_cat_008'), ('FILE_SEARCH_IMAGE', 'S4_building_021_cat_008.jpg'), ('TARGET', 1), ('TARGET_NAME', 'cat1953.png'), ('TARGET_MEM', 'cat1953.png'), ('D1', 'cat1966.png'), ('D2', 'cat1835.png'), ('D3', 'cat1921.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_field_001_farmanimals_007'), ('FILE_SEARCH_IMAGE', 'S4_field_001_farmanimals_007.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'cow375.png'), ('D2', 'cow361.png'), ('D3', 'horse620.png'), ('D4', 'sheep317.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_037_book_010'), ('FILE_SEARCH_IMAGE', 'S4_shelves_037_book_010.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'book817.png'), ('D2', 'book1001.png'), ('D3', 'book344.png'), ('D4', 'book319.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_047_bird_003'), ('FILE_SEARCH_IMAGE', 'S4_building_047_bird_003.jpg'), ('TARGET', 0), ('TARGET_NAME', 'bird370.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'bird417.png'), ('D2', 'bird489.png'), ('D3', 'bird389.png'), ('D4', 'bird358.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_017_sheep_005'), ('FILE_SEARCH_IMAGE', 'S4_mountain_017_sheep_005.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'sheep1498.png'), ('D2', 'sheep1552.png'), ('D3', 'sheep1422.png'), ('D4', 'sheep1597.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_003_cow_001'), ('FILE_SEARCH_IMAGE', 'S4_mountain_003_cow_001.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'cow77.png'), ('D2', 'cow241.png'), ('D3', 'cow192.png'), ('D4', 'cow256.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_africansavanna_003_wildanimals_003'), ('FILE_SEARCH_IMAGE', 'S4_africansavanna_003_wildanimals_003.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'elephant449.png'), ('D2', 'giraffe169.png'), ('D3', 'zebra311.png'), ('D4', 'giraffe738.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_045_dog_013'), ('FILE_SEARCH_IMAGE', 'S4_building_045_dog_013.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'dog1760.png'), ('D2', 'dog1810.png'), ('D3', 'dog1887.png'), ('D4', 'dog1907.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_020_sheep_008'), ('FILE_SEARCH_IMAGE', 'S4_mountain_020_sheep_008.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'sheep474.png'), ('D2', 'sheep356.png'), ('D3', 'sheep455.png'), ('D4', 'sheep483.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_001_pottedplant001'), ('FILE_SEARCH_IMAGE', 'S4_shelves_001_pottedplant_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'stm_shelves_001_pottedplant_001_002.png'), ('TARGET_MEM', 'stm_shelves_001_pottedplant_001_002.png'), ('D1', 'stm_shelves_001_pottedplant_001_009.png'), ('D2', 'stm_shelves_001_pottedplant_001_014.png'), ('D3', 'stm_shelves_001_pottedplant_001_016.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_africansavanna_001_wildanimals_001'), ('FILE_SEARCH_IMAGE', 'S4_africansavanna_001_wildanimals_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bear384.png'), ('TARGET_MEM', 'bear384.png'), ('D1', 'elephant316.png'), ('D2', 'giraffe5.png'), ('D3', 'zebra221.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_jungle_001_bird_001.jpg'), ('FILE_SEARCH_IMAGE', 'S4_jungle_001_bird_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'stm_jungle_001_bird_001_007.png'), ('TARGET_MEM', 'stm_jungle_001_bird_001_007.png'), ('D1', 'stm_jungle_001_bird_001_010.png'), ('D2', 'stm_jungle_001_bird_001_015.png'), ('D3', 'stm_jungle_001_bird_001_005.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_field_001_farmanimals_001'), ('FILE_SEARCH_IMAGE', 'S4_field_001_farmanimals_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'horse34.png'), ('TARGET_MEM', 'horse34.png'), ('D1', 'horse90.png'), ('D2', 'sheep288.png'), ('D3', 'cow143.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_030_book_003'), ('FILE_SEARCH_IMAGE', 'S4_shelves_030_book_003.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'book106.png'), ('D2', 'book150.png'), ('D3', 'book237.png'), ('D4', 'book549.png'), ('D5', 'book9.png'), ('D6', 'book417.png'), ('D7', 'book51.png'), ('D8', 'book396.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_021_sheep_009'), ('FILE_SEARCH_IMAGE', 'S4_mountain_021_sheep_009.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'sheep760.png'), ('D2', 'sheep655.png'), ('D3', 'sheep710.png'), ('D4', 'sheep654.png'), ('D5', 'sheep618.png'), ('D6', 'sheep761.png'), ('D7', 'sheep719.png'), ('D8', 'sheep739.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_038_book_011'), ('FILE_SEARCH_IMAGE', 'S4_shelves_038_book_011.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'book546.png'), ('D2', 'book620.png'), ('D3', 'book1262.png'), ('D4', 'book634.png'), ('D5', 'book633.png'), ('D6', 'book1096.png'), ('D7', 'book1261.png'), ('D8', 'book1265.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_023_teddybear_004'), ('FILE_SEARCH_IMAGE', 'S4_shelves_023_teddybear_004.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'teddy bear487.png'), ('D2', 'teddy bear517.png'), ('D3', 'teddy bear521.png'), ('D4', 'teddy bear555.png'), ('D5', 'teddy bear637.png'), ('D6', 'teddy bear762.png'), ('D7', 'teddy bear725.png'), ('D8', 'teddy bear755.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_022_cat_009'), ('FILE_SEARCH_IMAGE', 'S4_building_022_cat_009.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'cat1624.png'), ('D2', 'cat1707.png'), ('D3', 'cat1761.png'), ('D4', 'cat1792.png'), ('D5', 'cat1636.png'), ('D6', 'cat1650.png'), ('D7', 'cat1793.png'), ('D8', 'cat1757.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_046_sheep_001'), ('FILE_SEARCH_IMAGE', 'S4_building_046_sheep_001.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'sheep1453.png'), ('D2', 'sheep1556.png'), ('D3', 'sheep224.png'), ('D4', 'sheep1458.png'), ('D5', 'sheep1754.png'), ('D6', 'sheep1748.png'), ('D7', 'sheep1843.png'), ('D8', 'sheep238.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_036_book_009'), ('FILE_SEARCH_IMAGE', 'S4_shelves_036_book_009.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'book670.png'), ('D2', 'book778.png'), ('D3', 'book672.png'), ('D4', 'book674.png'), ('D5', 'book694.png'), ('D6', 'book660.png'), ('D7', 'book656.png'), ('D8', 'book688.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_050_toys_009'), ('FILE_SEARCH_IMAGE', 'S4_shelves_050_toys_009.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'airplane359.png'), ('D2', 'bus23.png'), ('D3', 'bus17.png'), ('D4', 'airplane364.png'), ('D5', 'airplane413.png'), ('D6', 'motorcycle306.png'), ('D7', 'airplane379.png'), ('D8', 'motorcycle660.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_027_vase_003'), ('FILE_SEARCH_IMAGE', 'S4_shelves_027_vase_003.jpg'), ('TARGET', 1), ('TARGET_NAME', 'vase549.png'), ('TARGET_MEM', 'vase549.png'), ('D1', 'vase127.png'), ('D2', 'vase136.png'), ('D3', 'vase162.png'), ('D4', 'vase330.png'), ('D5', 'vase602.png'), ('D6', 'vase640.png'), ('D7', 'vase654.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_018_remote_002'), ('FILE_SEARCH_IMAGE', 'S4_shelves_018_remote_002.jpg'), ('TARGET', 1), ('TARGET_NAME', 'remote63.png'), ('TARGET_MEM', 'remote63.png'), ('D1', 'remote23.png'), ('D2', 'remote38.png'), ('D3', 'remote48.png'), ('D4', 'remote65.png'), ('D5', 'remote71.png'), ('D6', 'remote82.png'), ('D7', 'remote19.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_jungle_007_bird_007'), ('FILE_SEARCH_IMAGE', 'S4_jungle_007_bird_007.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bird207.png'), ('TARGET_MEM', 'bird207.png'), ('D1', 'bird195.png'), ('D2', 'bird232.png'), ('D3', 'bird242.png'), ('D4', 'bird246.png'), ('D5', 'bird278.png'), ('D6', 'bird294.png'), ('D7', 'bird310.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_field_004_farmanimals_004'), ('FILE_SEARCH_IMAGE', 'S4_field_004_farmanimals_004.jpg'), ('TARGET', 1), ('TARGET_NAME', 'horse205.png'), ('TARGET_MEM', 'horse205.png'), ('D1', 'horse7.png'), ('D2', 'sheep103.png'), ('D3', 'sheep106.png'), ('D4', 'cow69.png'), ('D5', 'cow232.png'), ('D6', 'cow15.png'), ('D7', 'sheep3.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_031_person_017'), ('FILE_SEARCH_IMAGE', 'S4_building_031_person_017.jpg'), ('TARGET', 1), ('TARGET_NAME', 'person771.png'), ('TARGET_MEM', 'person771.png'), ('D1', 'person1039.png'), ('D2', 'person34.png'), ('D3', 'person512.png'), ('D4', 'person513.png'), ('D5', 'person58.png'), ('D6', 'person596.png'), ('D7', 'person842.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_042_dog_010'), ('FILE_SEARCH_IMAGE', 'S4_building_042_dog_010.jpg'), ('TARGET', 1), ('TARGET_NAME', 'dog495.png'), ('TARGET_MEM', 'dog495.png'), ('D1', 'dog1126.png'), ('D2', 'dog1176.png'), ('D3', 'dog508.png'), ('D4', 'dog518.png'), ('D5', 'dog780.png'), ('D6', 'dog872.png'), ('D7', 'dog948.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_047_toys_006'), ('FILE_SEARCH_IMAGE', 'S4_shelves_047_toys_006.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bus328.png'), ('TARGET_MEM', 'bus328.png'), ('D1', 'bus558.png'), ('D2', 'car108.png'), ('D3', 'car112.png'), ('D4', 'car82.png'), ('D5', 'motorcycle779.png'), ('D6', 'airplane17.png'), ('D7', 'airplane4.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_041_dog_009'), ('FILE_SEARCH_IMAGE', 'S4_building_041_dog_009.jpg'), ('TARGET', 1), ('TARGET_NAME', 'dog583.png'), ('TARGET_MEM', 'dog583.png'), ('D1', 'dog301.png'), ('D2', 'dog446.png'), ('D3', 'dog447.png'), ('D4', 'dog461.png'), ('D5', 'dog475.png'), ('D6', 'dog541.png'), ('D7', 'dog562.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 8), ('stDur_Mem', 8), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_stadium_001_person_001'), ('FILE_SEARCH_IMAGE', 'S4_stadium_001_person_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'stadium_001_person_010.png'), ('TARGET_MEM', 'stadium_001_person_010.png'), ('D1', 'blank.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_sky_004_kite_004'), ('FILE_SEARCH_IMAGE', 'S4_sky_004_kite_004.jpg'), ('TARGET', 1), ('TARGET_NAME', 'kite630.png'), ('TARGET_MEM', 'kite630.png'), ('D1', 'blank.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_052_toys_011'), ('FILE_SEARCH_IMAGE', 'S4_shelves_052_toys_011.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bus112.png'), ('TARGET_MEM', 'bus112.png'), ('D1', 'blank.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_field_008_farmanimals_008'), ('FILE_SEARCH_IMAGE', 'S4_field_008_farmanimals_008.jpg'), ('TARGET', 1), ('TARGET_NAME', 'sheep913.png'), ('TARGET_MEM', 'sheep913.png'), ('D1', 'blank.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_010_cat_002'), ('FILE_SEARCH_IMAGE', 'S4_building_010_cat_002.jpg'), ('TARGET', 1), ('TARGET_NAME', 'cat105.png'), ('TARGET_MEM', 'cat105.png'), ('D1', 'blank.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_sky_003_kite_003'), ('FILE_SEARCH_IMAGE', 'S4_sky_003_kite_003.jpg'), ('TARGET', 1), ('TARGET_NAME', 'kite624.png'), ('TARGET_MEM', 'kite624.png'), ('D1', 'blank.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_049_toys_008'), ('FILE_SEARCH_IMAGE', 'S4_shelves_049_toys_008.jpg'), ('TARGET', 1), ('TARGET_NAME', 'truck627.png'), ('TARGET_MEM', 'truck627.png'), ('D1', 'blank.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_019_cat_006'), ('FILE_SEARCH_IMAGE', 'S4_building_019_cat_006.jpg'), ('TARGET', 1), ('TARGET_NAME', 'cat997.png'), ('TARGET_MEM', 'cat997.png'), ('D1', 'blank.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_006_person_003'), ('FILE_SEARCH_IMAGE', 'S4_building_006_person_003.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'person311.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_jungle_009_bird_009'), ('FILE_SEARCH_IMAGE', 'S4_jungle_009_bird_009.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'bird435.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_033_book_006'), ('FILE_SEARCH_IMAGE', 'S4_shelves_033_book_006.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'book119.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_jungle_011_bird_011'), ('FILE_SEARCH_IMAGE', 'S4_jungle_011_bird_011.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'bird1369.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_042_toys_001'), ('FILE_SEARCH_IMAGE', 'S4_shelves_042_toys_001.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'bus30.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_043_toys_002'), ('FILE_SEARCH_IMAGE', 'S4_shelves_043_toys_002.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'car138.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_011_cat_003'), ('FILE_SEARCH_IMAGE', 'S4_building_011_cat_003.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'cat167.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_048_toys_007'), ('FILE_SEARCH_IMAGE', 'S4_shelves_048_toys_007.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'airplane180.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 1), ('stDur_Mem', 1), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_029_book_002'), ('FILE_SEARCH_IMAGE', 'S4_shelves_029_book_002.jpg'), ('TARGET', 1), ('TARGET_NAME', 'book874.png'), ('TARGET_MEM', 'book874.png'), ('D1', 'book1249.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_053_toys_012'), ('FILE_SEARCH_IMAGE', 'S4_shelves_053_toys_012.jpg'), ('TARGET', 1), ('TARGET_NAME', 'motorcycle509.png'), ('TARGET_MEM', 'motorcycle509.png'), ('D1', 'airplane136.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_049_bird_005'), ('FILE_SEARCH_IMAGE', 'S4_building_049_bird_005.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bird1082.png'), ('TARGET_MEM', 'bird1082.png'), ('D1', 'bird1040.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_field_006_farmanimals_006'), ('FILE_SEARCH_IMAGE', 'S4_field_006_farmanimals_006.jpg'), ('TARGET', 1), ('TARGET_NAME', 'sheep386.png'), ('TARGET_MEM', 'sheep386.png'), ('D1', 'cow128.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_039_dog_007'), ('FILE_SEARCH_IMAGE', 'S4_building_039_dog_007.jpg'), ('TARGET', 1), ('TARGET_NAME', 'dog519.png'), ('TARGET_MEM', 'dog519.png'), ('D1', 'dog592.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_030_person_016'), ('FILE_SEARCH_IMAGE', 'S4_building_030_person_016.jpg'), ('TARGET', 1), ('TARGET_NAME', 'person1923.png'), ('TARGET_MEM', 'person1923.png'), ('D1', 'person1925.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_051_toys_010'), ('FILE_SEARCH_IMAGE', 'S4_shelves_051_toys_010.jpg'), ('TARGET', 1), ('TARGET_NAME', 'truck262.png'), ('TARGET_MEM', 'truck262.png'), ('D1', 'truck167.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_026_horse_001'), ('FILE_SEARCH_IMAGE', 'S4_mountain_026_horse_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'horse815.png'), ('TARGET_MEM', 'horse815.png'), ('D1', 'horse1010.png'), ('D2', 'blank.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_014_person_007'), ('FILE_SEARCH_IMAGE', 'S4_building_014_person_007.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'person120.png'), ('D2', 'person198.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_015_person_008'), ('FILE_SEARCH_IMAGE', 'S4_building_015_person_008.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'person100.png'), ('D2', 'person108.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_032_cat_011'), ('FILE_SEARCH_IMAGE', 'S4_building_032_cat_011.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'cat206.png'), ('D2', 'cat219.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_017_cat_004'), ('FILE_SEARCH_IMAGE', 'S4_building_017_cat_004.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'cat800.png'), ('D2', 'cat830.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_024_person_010'), ('FILE_SEARCH_IMAGE', 'S4_building_024_person_010.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'person1015.png'), ('D2', 'person1089.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_025_person_011'), ('FILE_SEARCH_IMAGE', 'S4_building_025_person_011.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'person1266.png'), ('D2', 'person1352.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_014_bird_002'), ('FILE_SEARCH_IMAGE', 'S4_mountain_014_bird_002.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'bird27.png'), ('D2', 'bird456.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_013_bird_001'), ('FILE_SEARCH_IMAGE', 'S4_mountain_013_bird_001.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'bird152.png'), ('D2', 'bird403.png'), ('D3', 'blank.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 4), ('MEM_SET_SIZE', 2), ('stDur_Mem', 2), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_005_person_002'), ('FILE_SEARCH_IMAGE', 'S8_building_005_person_002.jpg'), ('TARGET', 1), ('TARGET_NAME', 'person546.png'), ('TARGET_MEM', 'person546.png'), ('D1', 'person248.png'), ('D2', 'person303.png'), ('D3', 'person367.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_031_book_004'), ('FILE_SEARCH_IMAGE', 'S8_shelves_031_book_004.jpg'), ('TARGET', 1), ('TARGET_NAME', 'book1164.png'), ('TARGET_MEM', 'book1164.png'), ('D1', 'book692.png'), ('D2', 'book935.png'), ('D3', 'book499.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_035_dog_003'), ('FILE_SEARCH_IMAGE', 'S8_building_035_dog_003.jpg'), ('TARGET', 1), ('TARGET_NAME', 'dog587.png'), ('TARGET_MEM', 'dog587.png'), ('D1', 'dog455.png'), ('D2', 'dog499.png'), ('D3', 'dog557.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_025_cow_005'), ('FILE_SEARCH_IMAGE', 'S8_mountain_025_cow_005.jpg'), ('TARGET', 1), ('TARGET_NAME', 'cow396.png'), ('TARGET_MEM', 'cow396.png'), ('D1', 'cow241.png'), ('D2', 'cow340.png'), ('D3', 'cow343.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_016_cup_001'), ('FILE_SEARCH_IMAGE', 'S8_shelves_016_cup_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'cup406.png'), ('TARGET_MEM', 'cup406.png'), ('D1', 'cup356.png'), ('D2', 'cup636.png'), ('D3', 'cup677.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_051_bird_007'), ('FILE_SEARCH_IMAGE', 'S8_building_051_bird_007.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bird596.png'), ('TARGET_MEM', 'bird596.png'), ('D1', 'bird663.png'), ('D2', 'bird540.png'), ('D3', 'bird661.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_003_person_001'), ('FILE_SEARCH_IMAGE', 'S8_building_003_person_001.jpg'), ('TARGET', 1), ('TARGET_NAME', 'stm_building_003_person_001_005.png'), ('TARGET_MEM', 'stm_building_003_person_001_005.png'), ('D1', 'stm_building_003_person_001_013.png'), ('D2', 'stm_building_003_person_001_020.png'), ('D3', 'stm_building_003_person_001_014.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_014_bottle_003'), ('FILE_SEARCH_IMAGE', 'S8_shelves_014_bottle_003.jpg'), ('TARGET', 1), ('TARGET_NAME', 'bottle244.png'), ('TARGET_MEM', 'bottle244.png'), ('D1', 'bottle465.png'), ('D2', 'bottle409.png'), ('D3', 'bottle197.png'), ('D4', 'blank.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'm')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_040_book_013'), ('FILE_SEARCH_IMAGE', 'S8_shelves_040_book_013.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'book477.png'), ('D2', 'book786.png'), ('D3', 'book915.png'), ('D4', 'book921.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_021_remote_005'), ('FILE_SEARCH_IMAGE', 'S8_shelves_021_remote_005.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'remote353.png'), ('D2', 'remote357.png'), ('D3', 'remote358.png'), ('D4', 'remote373.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_018_sheep_006'), ('FILE_SEARCH_IMAGE', 'S8_mountain_018_sheep_006.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'sheep1610.png'), ('D2', 'sheep1647.png'), ('D3', 'sheep1786.png'), ('D4', 'sheep1673.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_020_remote_004'), ('FILE_SEARCH_IMAGE', 'S8_shelves_020_remote_004.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'remote258.png'), ('D2', 'remote260.png'), ('D3', 'remote361.png'), ('D4', 'remote269.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 1), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_africansavanna_002_wildanimals_002'), ('FILE_SEARCH_IMAGE', 'S8_africansavanna_002_wildanimals_002.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'elephant231.png'), ('D2', 'elephant458.png'), ('D3', 'giraffe141.png'), ('D4', 'giraffe352.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_building_023_cat_010'), ('FILE_SEARCH_IMAGE', 'S8_building_023_cat_010.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'cat1497.png'), ('D2', 'cat1551.png'), ('D3', 'cat1592.png'), ('D4', 'cat1671.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_mountain_016_sheep_004'), ('FILE_SEARCH_IMAGE', 'S8_mountain_016_sheep_004.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'sheep1420.png'), ('D2', 'sheep1560.png'), ('D3', 'sheep1768.png'), ('D4', 'sheep1774.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')]), OrderedDict([('FILE_CMP_IMAGE', 'cmp_shelves_009_teddybear_002'), ('FILE_SEARCH_IMAGE', 'S8_shelves_009_teddybear_002.jpg'), ('TARGET', 0), ('TARGET_NAME', 'blank.png'), ('TARGET_MEM', 'blank.png'), ('D1', 'teddy bear107.png'), ('D2', 'teddy bear123.png'), ('D3', 'teddy bear226.png'), ('D4', 'teddy bear241.png'), ('D5', 'blank.png'), ('D6', 'blank.png'), ('D7', 'blank.png'), ('D8', 'blank.png'), ('CONTEXT', 0), ('VISUAL_SET_SIZE', 8), ('MEM_SET_SIZE', 4), ('stDur_Mem', 4), ('stDur_VS', 7), ('corrAns', 'v')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Psychopy_Exp_Params.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="fixation"/>
+    <Routine name="trial"/>
+    <Routine name="fixation_search"/>
+    <Routine name="search"/>
+    <Routine name="break_2"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="thanks"/>
+  </Flow>
+</PsychoPy2experiment>

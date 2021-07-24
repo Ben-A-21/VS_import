@@ -1,0 +1,15 @@
+9.074069999999999	EXP	Created Window = Window( name=Window, fullscr=true, color={"_rgb":[1,1,1],"_int":16777215,"_hex":"#ffffff"}, units=height, waitBlanking=true, autoLog=true, size=[1594,759] )
+187.36992500000002	DATA	Keydown: 5
+188.11452500000001	DATA	Keydown: 0
+192.05098000000004	DATA	Keydown: Shift
+192.30478500000004	DATA	Keydown: L
+192.74980500000004	DATA	Keydown: u
+193.36571000000004	DATA	Keydown: o
+194.69806000000003	DATA	Keydown:  
+195.08520000000001	DATA	Keydown: w
+195.34956000000003	DATA	Keydown: e
+195.795575	DATA	Keydown: i
+198.32812500000003	DATA	Keydown: p
+198.69316500000002	DATA	Keydown: i
+198.97702500000003	DATA	Keydown: n
+199.41074500000002	DATA	Keydown: g
